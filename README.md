@@ -13,8 +13,8 @@
 <br><br>
 
 <!-- Stats Row -->
-<img src="https://github-readme-stats.vercel.app/api?username=pruthvi828&show_icons=true&count_private=true&include_all_commits=true&hide_rank=true&hide_border=true&title_color=22D3EE&icon_color=A78BFA&text_color=94A3B8&bg_color=0A101F&card_width=500" width="48%" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=pruthvi828&layout=compact&hide_border=true&title_color=22D3EE&icon_color=A78BFA&text_color=94A3B8&bg_color=0A101F&card_width=500" width="48%" />
+<img src="https://github-readme-stats.vercel.app/api?username=pruthvi828&show_icons=true&theme=dark&hide_border=true&title_color=22D3EE&icon_color=A78BFA&text_color=94A3B8&bg_color=0A101F&count_private=true&include_all_commits=true&cache_seconds=86400" width="48%" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=pruthvi828&layout=compact&theme=dark&hide_border=true&title_color=22D3EE&text_color=94A3B8&bg_color=0A101F&cache_seconds=86400" width="48%" />
 
 <br><br>
 
