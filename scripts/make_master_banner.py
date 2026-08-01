@@ -133,19 +133,18 @@ def build_banner():
         '  .bg { fill: #0A101F; }',
         '  .dot { fill: #A78BFA; shape-rendering: crispEdges; }',
         '  .traveller { fill: #22D3EE; shape-rendering: crispEdges; }',
-        '  .text-main { fill: #22D3EE; font-family: monospace; font-size: 14px; }',
-        '  .text-label { fill: #10B981; font-family: monospace; font-size: 14px; }',
+        '  .text-main { fill: #22D3EE; font-family: monospace; font-size: 20px; font-weight: bold; letter-spacing: 0.5px; }',
+        '  .text-label { fill: #10B981; font-family: monospace; font-size: 20px; font-weight: bold; letter-spacing: 2px; }',
         '</style>',
         '<rect width="100%" height="100%" class="bg" rx="15" />',
-        '<!-- SYSTEM.INFO Text -->'
-        '<text x="500" y="50" class="text-label">SYSTEM.INFO</text>',
-        '<text x="500" y="80" class="text-main">Subject: Pruthvi</text>',
-        '<text x="500" y="110" class="text-main">Role: Hardware &amp; Software Engineer</text>',
-        '<text x="500" y="140" class="text-main">Location: Earth</text>',
-        '<text x="500" y="170" class="text-main">Education: Engineering</text>',
-        '<text x="500" y="200" class="text-main">Status: Building + Learning + Shipping</text>',
-        '<text x="500" y="230" class="text-main">ToolChain: Kicad, AutoCAD, VS Code, Git</text>',
-        '<text x="500" y="260" class="text-main">Core.Lang: C, C++, Python</text>',
+        '<text x="490" y="55"  class="text-label">SYSTEM.INFO</text>'
+        '<text x="490" y="95"  class="text-main">Subject&#160;&#160;: Pruthvi</text>',
+        '<text x="490" y="135" class="text-main">Role&#160;&#160;&#160;&#160;&#160;: Hardware &amp; Software Engineer</text>',
+        '<text x="490" y="175" class="text-main">Location : Earth</text>',
+        '<text x="490" y="215" class="text-main">Education: Engineering</text>',
+        '<text x="490" y="255" class="text-main">Status&#160;&#160;&#160;: Building + Learning + Shipping</text>',
+        '<text x="490" y="295" class="text-main">ToolChain: Kicad, AutoCAD, VS Code, Git</text>',
+        '<text x="490" y="335" class="text-main">Core.Lang: C, C++, Python</text>',
         '<g transform="translate(50, 100)">'
     ]
 

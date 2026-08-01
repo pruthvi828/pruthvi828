@@ -7,14 +7,14 @@ OUTPUT_SVG = "contrib-heatmap.svg"
 
 PALETTE = ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353", "#69f0a0"]
 
-BOX_SIZE = 10
-BOX_SPACING = 3
+BOX_SIZE = 14
+BOX_SPACING = 4
 WEEKS = 53
 DAYS_IN_WEEK = 7
 
 # Animation parameters
 ANIMATION_DURATION = 0.8 # Total time for the diagonal reveal
-STAGGER = 0.015          # Delay between boxes appearing
+STAGGER = 0.012          # Delay between boxes appearing
 
 def render_heatmap():
     if not os.path.exists(INPUT_JSON):
@@ -48,7 +48,8 @@ def render_heatmap():
         }}
         .text {{
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            font-size: 10px;
+            font-size: 13px;
+            font-weight: bold;
             fill: #8b949e;
         }}
     </style>
@@ -69,16 +70,46 @@ def render_heatmap():
         week_idx = i // 7
         day_idx = i % 7
         
-        import random
-        if week_idx < (WEEKS // 2):
-            # Fill the left half, but randomly leave a few empty (around 3-4 total)
-            if random.random() < 0.02:
+        # Realistic GitHub contribution pattern algorithm
+        is_weekend = (day_idx == 0 or day_idx == 6)
+        
+        # Simulate active sprint phases vs quiet periods across the year
+        phase = math.sin(week_idx * 0.25) + math.cos(week_idx * 0.1)
+        is_active_sprint = phase > -0.2
+        
+        # Deterministic noise per cell for consistent rendering
+        seed_val = (week_idx * 37 + day_idx * 17 + 42) % 100
+        
+        if is_weekend:
+            if seed_val < 75:
                 level = 0
+            elif seed_val < 92:
+                level = 1
             else:
-                level = random.randint(1, len(PALETTE) - 1)
-        else:
-            # Empty out the right half
-            level = 0
+                level = 2
+        elif is_active_sprint:
+            if seed_val < 20:
+                level = 0
+            elif seed_val < 55:
+                level = 1
+            elif seed_val < 80:
+                level = 2
+            elif seed_val < 94:
+                level = 3
+            else:
+                level = 4
+        else: # Quiet period
+            if seed_val < 65:
+                level = 0
+            elif seed_val < 88:
+                level = 1
+            else:
+                level = 2
+
+        # Blend with real contribution data from JSON if present
+        json_level = day.get("level", 0)
+        if json_level > 0:
+            level = min(max(level, json_level), len(PALETTE) - 1)
             
         color = PALETTE[level]
         
