@@ -85,8 +85,8 @@ def build_banner():
     else:
         img = Image.open(img_path).convert('L')
     
-    # Resize and crop to 300x340
-    img = ImageOps.fit(img, (300, 340), Image.Resampling.LANCZOS)
+    # Resize and crop to 430x490 for a larger portrait
+    img = ImageOps.fit(img, (430, 490), Image.Resampling.LANCZOS)
     
     # Remove background using rembg
     try:
@@ -123,7 +123,7 @@ def build_banner():
     portrait_dots = [(x, y) for x, y in dithered_dots if mask_array[y, x] > 128]
     
     # Subsample dots to prevent file size blowup
-    portrait_dots = random.sample(portrait_dots, min(len(portrait_dots), 12000))
+    portrait_dots = random.sample(portrait_dots, min(len(portrait_dots), 18000))
     
     # Travellers removed
 
@@ -145,7 +145,7 @@ def build_banner():
         '<text x="490" y="255" class="text-main">Status&#160;&#160;&#160;: Building + Learning + Shipping</text>',
         '<text x="490" y="295" class="text-main">ToolChain: Kicad, AutoCAD, VS Code, Git</text>',
         '<text x="490" y="335" class="text-main">Core.Lang: C, C++, Python</text>',
-        '<g transform="translate(50, 100)">'
+        '<g transform="translate(30, 60)">'  
     ]
 
     # Portrait dots — continuous twinkling animation
