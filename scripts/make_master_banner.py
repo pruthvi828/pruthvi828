@@ -129,48 +129,84 @@ def build_banner():
     
     # Travellers removed
 
+    # Also store original pixel brightness for dot color variation
+    raw_array = np.array(img, dtype=float)  # already inverted: bright = more dots
+
     svg_content = [
-        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 610" width="1180" height="610">',
+        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 620" width="1180" height="620">',
+        '<defs>',
+        '  <filter id="glow"><feGaussianBlur stdDeviation="3" result="coloredBlur"/><feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>',
+        '  <linearGradient id="divGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#22D3EE" stop-opacity="0"/><stop offset="30%" stop-color="#22D3EE" stop-opacity="1"/><stop offset="70%" stop-color="#A78BFA" stop-opacity="1"/><stop offset="100%" stop-color="#A78BFA" stop-opacity="0"/></linearGradient>',
+        '</defs>',
         '<style>',
-        '  .bg { fill: #0A101F; }',
-        '  .dot { fill: #A78BFA; shape-rendering: crispEdges; }',
-        '  .traveller { fill: #22D3EE; shape-rendering: crispEdges; }',
-        '  .text-main { fill: #22D3EE; font-family: monospace; font-size: 20px; font-weight: bold; letter-spacing: 0.5px; }',
-        '  .text-label { fill: #10B981; font-family: monospace; font-size: 20px; font-weight: bold; letter-spacing: 2px; }',
+        '  .bg { fill: #080E1C; }',
+        '  .text-main { fill: #E2E8F0; font-family: "Courier New", monospace; font-size: 18px; }',
+        '  .text-label { fill: #22D3EE; font-family: "Courier New", monospace; font-size: 13px; letter-spacing: 3px; }',
+        '  .text-value { fill: #A78BFA; font-family: "Courier New", monospace; font-size: 18px; font-weight: bold; }',
+        '  .text-key { fill: #10B981; font-family: "Courier New", monospace; font-size: 18px; }',
+        '  .corner { fill: none; stroke: #22D3EE; stroke-width: 2; opacity: 0.7; }',
+        '  .scanline { fill: #22D3EE; opacity: 0.03; }',
         '</style>',
-        '<rect width="100%" height="100%" class="bg" rx="15" />',
-        '<text x="490" y="55"  class="text-label">SYSTEM.INFO</text>'
-        '<text x="490" y="95"  class="text-main">Subject&#160;&#160;: Pruthvi</text>',
-        '<text x="490" y="135" class="text-main">Role&#160;&#160;&#160;&#160;&#160;: Hardware &amp; Software Engineer</text>',
-        '<text x="490" y="175" class="text-main">Location : Earth</text>',
-        '<text x="490" y="215" class="text-main">Education: Engineering</text>',
-        '<text x="490" y="255" class="text-main">Status&#160;&#160;&#160;: Building + Learning + Shipping</text>',
-        '<text x="490" y="295" class="text-main">ToolChain: Kicad, AutoCAD, VS Code, Git</text>',
-        '<text x="490" y="335" class="text-main">Core.Lang: C, C++, Python</text>',
-        '<g transform="translate(30, 60)">'  
+        # Background
+        '<rect width="100%" height="100%" class="bg" rx="12" />',
+        # Top terminal bar
+        '<rect x="0" y="0" width="1180" height="36" fill="#0F172A" rx="12"/>',
+        '<rect x="0" y="24" width="1180" height="12" fill="#0F172A"/>',
+        '<circle cx="22" cy="18" r="6" fill="#FF5F57"/>',
+        '<circle cx="44" cy="18" r="6" fill="#FFBD2E"/>',
+        '<circle cx="66" cy="18" r="6" fill="#28C840"/>',
+        '<text x="590" y="23" text-anchor="middle" class="text-label" font-size="11px">PRUTHVI@GITHUB:~/profile</text>',
+        # Corner decorations (top-left portrait area)
+        '<rect x="20" y="48" width="20" height="3" class="corner"/>',
+        '<rect x="20" y="48" width="3" height="20" class="corner"/>',
+        '<rect x="440" y="48" width="20" height="3" class="corner"/>',
+        '<rect x="457" y="48" width="3" height="20" class="corner"/>',
+        '<rect x="20" y="582" width="20" height="3" class="corner"/>',
+        '<rect x="20" y="565" width="3" height="20" class="corner"/>',
+        '<rect x="440" y="582" width="20" height="3" class="corner"/>',
+        '<rect x="457" y="565" width="3" height="20" class="corner"/>',
+        # Glowing vertical divider
+        '<rect x="476" y="44" width="2" height="540" fill="url(#divGrad)" filter="url(#glow)"/>',
+        # System info panel
+        '<text x="510" y="90"  class="text-label">SYSTEM.INFO</text>',
+        '<line x1="510" y1="97" x2="830" y2="97" stroke="#22D3EE" stroke-width="1" opacity="0.4"/>',
+        '<text x="510" y="135"><tspan class="text-key">Subject  </tspan><tspan class="text-main"> : </tspan><tspan class="text-value">Pruthvi</tspan></text>',
+        '<text x="510" y="175"><tspan class="text-key">Role     </tspan><tspan class="text-main"> : </tspan><tspan class="text-value">Hardware &amp; Software Eng.</tspan></text>',
+        '<text x="510" y="215"><tspan class="text-key">Location </tspan><tspan class="text-main"> : </tspan><tspan class="text-value">Earth</tspan></text>',
+        '<text x="510" y="255"><tspan class="text-key">Education</tspan><tspan class="text-main"> : </tspan><tspan class="text-value">Engineering</tspan></text>',
+        '<text x="510" y="295"><tspan class="text-key">Status   </tspan><tspan class="text-main"> : </tspan><tspan class="text-value">Building + Learning</tspan></text>',
+        '<text x="510" y="335"><tspan class="text-key">ToolChain</tspan><tspan class="text-main"> : </tspan><tspan class="text-value">Kicad, AutoCAD, Git</tspan></text>',
+        '<text x="510" y="375"><tspan class="text-key">Core.Lang</tspan><tspan class="text-main"> : </tspan><tspan class="text-value">C, C++, Python</tspan></text>',
+        # Blinking cursor
+        '<rect x="510" y="400" width="12" height="20" fill="#22D3EE"><animate attributeName="opacity" values="1;0;1" dur="1.2s" repeatCount="indefinite"/></rect>',
+        # Portrait group
+        '<g transform="translate(28, 52)">',
     ]
 
-    # Portrait dots — continuous twinkling animation
+    # Portrait dots with color variation based on intensity
+    dot_colors = ['#6D28D9', '#7C3AED', '#8B5CF6', '#A78BFA', '#C4B5FD', '#DDD6FE']
     for x, y in portrait_dots:
-        delay = random.uniform(0, 8)        # staggered start across 8s window
-        dur = random.uniform(1.5, 4.0)      # each dot has its own pulse speed
+        # Get pixel brightness (0=dark=dense dots, 255=bright)
+        bx, by = min(int(x), raw_array.shape[1]-1), min(int(y), raw_array.shape[0]-1)
+        brightness = raw_array[by, bx]
+        # Map brightness to color: darker original (after invert = high val) = brighter dot
+        color_idx = min(int(brightness / 255 * (len(dot_colors)-1)), len(dot_colors)-1)
+        color = dot_colors[color_idx]
+        delay = random.uniform(0, 8)
+        dur = random.uniform(1.5, 4.0)
         svg_content.append(
-            f'<rect x="{x}" y="{y}" width="2" height="2" class="dot">'
-            f'<animate attributeName="opacity" values="0.15;1;0.15" '
+            f'<rect x="{x}" y="{y}" width="3" height="3" fill="{color}" shape-rendering="crispEdges">'
+            f'<animate attributeName="opacity" values="0.2;1;0.2" '
             f'keyTimes="0;0.5;1" begin="{delay:.2f}s" dur="{dur:.2f}s" '
             f'repeatCount="indefinite" calcMode="spline" '
             f'keySplines="0.4 0 0.6 1;0.4 0 0.6 1" /></rect>'
         )
         
     svg_content.append('</g>')
-
-    # Travellers removed
-
     svg_content.append('</svg>')
-    
+
     with open("dark.svg", "w") as f:
         f.write("".join(svg_content))
     print("Created dark.svg")
-
 if __name__ == "__main__":
     build_banner()
