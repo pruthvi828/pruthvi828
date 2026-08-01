@@ -9,11 +9,11 @@ def floyd_steinberg_dither(img_array):
     dots = []
     for y in range(h):
         for x in range(w):
-            old_val = dithered[y, x]
-            new_val = 255 if old_val > 128 else 0
-            dithered[y, x] = new_val
-            err = old_val - new_val
-            if new_val == 0:
+            old = dithered[y, x]
+            new = 255 if old > 128 else 0
+            dithered[y, x] = new
+            err = old - new
+            if new == 0:
                 dots.append((x, y))
             if x + 1 < w:
                 dithered[y, x+1] = min(max(dithered[y, x+1] + err * 7/16, 0), 255)
@@ -28,106 +28,78 @@ def floyd_steinberg_dither(img_array):
 def build_banner():
     img_path = "photo1.png"
 
-    # Load image and extract alpha mask if RGBA
     if not os.path.exists(img_path):
-        img = Image.new('L', (400, 500), color=128)
-        mask = Image.new('L', (400, 500), 255)
+        img  = Image.new('L', (380, 480), color=128)
+        mask = Image.new('L', (380, 480), 255)
     else:
         raw = Image.open(img_path)
         if raw.mode == 'RGBA':
             r, g, b, a = raw.split()
+            img  = raw.convert('L')
             mask = a
-            img = raw.convert('L')
         else:
-            img = raw.convert('L')
+            img  = raw.convert('L')
             mask = Image.new('L', img.size, 255)
 
-    # Resize portrait to a good size
-    TARGET_W, TARGET_H = 400, 500
-    img  = ImageOps.fit(img,  (TARGET_W, TARGET_H), Image.Resampling.LANCZOS)
-    mask = ImageOps.fit(mask, (TARGET_W, TARGET_H), Image.Resampling.LANCZOS)
+    W, H = 380, 480
+    img  = ImageOps.fit(img,  (W, H), Image.Resampling.LANCZOS)
+    mask = ImageOps.fit(mask, (W, H), Image.Resampling.LANCZOS)
 
-    # Enhance contrast and sharpen
     img = ImageOps.autocontrast(img, cutoff=2)
     img = img.filter(ImageFilter.UnsharpMask(radius=2, percent=150))
-
-    # Invert so dark areas (shadows/hair) produce dots on dark background
     img = ImageOps.invert(img)
 
-    img_array  = np.array(img,  dtype=float)
-    mask_array = np.array(mask, dtype=float)
+    img_arr  = np.array(img,  dtype=float)
+    mask_arr = np.array(mask, dtype=float)
 
-    # Dither and filter by mask
-    dithered_dots = floyd_steinberg_dither(img_array)
-    portrait_dots = [(x, y) for x, y in dithered_dots if mask_array[y, x] > 128]
-    portrait_dots = random.sample(portrait_dots, min(len(portrait_dots), 6000))
+    all_dots = floyd_steinberg_dither(img_arr)
+    dots = [(x, y) for x, y in all_dots if mask_arr[y, x] > 128]
+    dots = random.sample(dots, min(len(dots), 4000))
 
-    # SVG dimensions
-    SVG_W, SVG_H = 900, 560
+    # Build compact SVG using CSS keyframe classes only (no SMIL)
+    NP = 8  # number of animation phases
+    css_phases = ""
+    for i in range(NP):
+        delay = round(i * 1.0, 1)
+        dur   = round(1.8 + (i % 3) * 0.7, 1)
+        css_phases += f".p{i}{{animation:tw {dur}s {delay}s infinite;}}"
 
-    # CSS-based twinkle animation (much more compact than SMIL)
-    # Define 10 stagger classes, assign each dot to one
-    NUM_CLASSES = 10
-    stagger_css = ""
-    for i in range(NUM_CLASSES):
-        delay = i * 0.8
-        dur   = 1.5 + (i % 4) * 0.6
-        stagger_css += (
-            f'.tw{i}{{animation:tw {dur:.1f}s {delay:.1f}s infinite ease-in-out;}}'
-        )
+    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 540" width="860" height="540">
+<style>
+.bg{{fill:#0D1117}}.dot{{fill:#A78BFA;shape-rendering:crispEdges}}
+.lbl{{fill:#22D3EE;font-family:monospace;font-size:12px;letter-spacing:2px}}
+.key{{fill:#10B981;font-family:monospace;font-size:17px}}
+.val{{fill:#C4B5FD;font-family:monospace;font-size:17px;font-weight:bold}}
+.div{{fill:none;stroke:#22D3EE;stroke-width:1;opacity:0.4}}
+.cur{{fill:#22D3EE;animation:blink 1.1s infinite}}
+@keyframes tw{{0%,100%{{opacity:.15}}50%{{opacity:1}}}}
+@keyframes blink{{0%,49%{{opacity:1}}50%,100%{{opacity:0}}}}
+{css_phases}
+</style>
+<rect width="860" height="540" class="bg" rx="10"/>
+<line x1="415" y1="16" x2="415" y2="524" class="div"/>
+<text x="435" y="58" class="lbl">SYSTEM.INFO</text>
+<line x1="435" y1="65" x2="840" y2="65" stroke="#22D3EE" stroke-width="1" opacity="0.25"/>
+<text x="435" y="105"><tspan class="key">Subject  </tspan><tspan class="val"> Pruthvi</tspan></text>
+<text x="435" y="145"><tspan class="key">Role     </tspan><tspan class="val"> HW &amp; SW Engineer</tspan></text>
+<text x="435" y="185"><tspan class="key">Location </tspan><tspan class="val"> Earth</tspan></text>
+<text x="435" y="225"><tspan class="key">Education</tspan><tspan class="val"> Engineering</tspan></text>
+<text x="435" y="265"><tspan class="key">Status   </tspan><tspan class="val"> Building &amp; Learning</tspan></text>
+<text x="435" y="305"><tspan class="key">ToolChain</tspan><tspan class="val"> KiCad · AutoCAD · Git</tspan></text>
+<text x="435" y="345"><tspan class="key">Core.Lang</tspan><tspan class="val"> C · C++ · Python</tspan></text>
+<rect x="435" y="368" width="10" height="18" class="cur"/>
+<g transform="translate(18,30)">
+"""
 
-    lines = [
-        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {SVG_W} {SVG_H}" width="{SVG_W}" height="{SVG_H}">',
-        '<style>',
-        '  .bg   { fill: #0D1117; }',
-        '  .dot  { fill: #A78BFA; shape-rendering: crispEdges; }',
-        '  .lbl  { fill: #22D3EE; font-family: monospace; font-size: 12px; letter-spacing: 2px; }',
-        '  .key  { fill: #10B981; font-family: monospace; font-size: 17px; }',
-        '  .val  { fill: #C4B5FD; font-family: monospace; font-size: 17px; font-weight: bold; }',
-        '  .sep  { fill: none; stroke: #22D3EE; stroke-width: 1.5; opacity: 0.5; }',
-        '  @keyframes tw { 0%,100%{opacity:.15} 50%{opacity:1} }',
-        f'  @keyframes blink {{ 0%,100%{{opacity:1}} 50%{{opacity:0}} }}',
-        f'  .cursor{{animation:blink 1.1s infinite;}}',
-        f'  {stagger_css}',
-        '</style>',
+    for x, y in dots:
+        p = random.randint(0, NP - 1)
+        svg += f'<rect x="{x}" y="{y}" width="2" height="2" class="dot p{p}"/>\n'
 
-        # Background
-        f'<rect width="{SVG_W}" height="{SVG_H}" class="bg" rx="10"/>',
-
-        # Vertical divider
-        '<line x1="440" y1="20" x2="440" y2="540" class="sep"/>',
-
-        # Info panel header
-        '<text x="470" y="65" class="lbl">SYSTEM.INFO</text>',
-        '<line x1="470" y1="72" x2="870" y2="72" stroke="#22D3EE" stroke-width="1" opacity="0.3"/>',
-
-        # Info rows
-        '<text x="470" y="110"><tspan class="key">Subject   </tspan><tspan class="val"> Pruthvi</tspan></text>',
-        '<text x="470" y="150"><tspan class="key">Role      </tspan><tspan class="val"> HW &amp; SW Engineer</tspan></text>',
-        '<text x="470" y="190"><tspan class="key">Location  </tspan><tspan class="val"> Earth</tspan></text>',
-        '<text x="470" y="230"><tspan class="key">Education </tspan><tspan class="val"> Engineering</tspan></text>',
-        '<text x="470" y="270"><tspan class="key">Status    </tspan><tspan class="val"> Building &amp; Learning</tspan></text>',
-        '<text x="470" y="310"><tspan class="key">ToolChain </tspan><tspan class="val"> KiCad · AutoCAD · Git</tspan></text>',
-        '<text x="470" y="350"><tspan class="key">Core.Lang </tspan><tspan class="val"> C · C++ · Python</tspan></text>',
-
-        # Blinking cursor
-        '<rect x="470" y="370" width="10" height="18" fill="#22D3EE" class="cursor"/>',
-
-        # Portrait group
-        '<g transform="translate(20, 30)">',
-    ]
-
-    # Dots using CSS class-based animation (compact)
-    for x, y in portrait_dots:
-        cls = random.randint(0, NUM_CLASSES - 1)
-        lines.append(f'<rect x="{x}" y="{y}" width="2" height="2" class="dot tw{cls}"/>')
-
-    lines.append('</g>')
-    lines.append('</svg>')
+    svg += "</g>\n</svg>"
 
     with open("dark.svg", "w") as f:
-        f.write("".join(lines))
-    print("Created dark.svg")
+        f.write(svg)
+    print("Created dark.svg —", round(len(svg)/1024), "KB")
 
 if __name__ == "__main__":
     build_banner()
