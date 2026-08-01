@@ -148,10 +148,17 @@ def build_banner():
         '<g transform="translate(50, 100)">'
     ]
 
-    # Portrait dots
+    # Portrait dots — continuous twinkling animation
     for x, y in portrait_dots:
-        d_val = random.randint(0, 20)
-        svg_content.append(f'<rect x="{x}" y="{y}" width="2" height="2" class="dot"><animate attributeName="opacity" values="0;1;1" keyTimes="0;0.1;1" begin="{d_val/10}s" dur="14.2s" repeatCount="indefinite" /></rect>')
+        delay = random.uniform(0, 8)        # staggered start across 8s window
+        dur = random.uniform(1.5, 4.0)      # each dot has its own pulse speed
+        svg_content.append(
+            f'<rect x="{x}" y="{y}" width="2" height="2" class="dot">'
+            f'<animate attributeName="opacity" values="0.15;1;0.15" '
+            f'keyTimes="0;0.5;1" begin="{delay:.2f}s" dur="{dur:.2f}s" '
+            f'repeatCount="indefinite" calcMode="spline" '
+            f'keySplines="0.4 0 0.6 1;0.4 0 0.6 1" /></rect>'
+        )
         
     svg_content.append('</g>')
 
