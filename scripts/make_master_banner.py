@@ -81,36 +81,38 @@ def build_banner():
     # Load and process image
     img_path = "photo1.png"
     if not os.path.exists(img_path):
-        img = Image.new('L', (300, 340), color=255)
+        img = Image.new('L', (430, 490), color=128)
+        mask = Image.new('L', (430, 490), 255)
     else:
-        img = Image.open(img_path).convert('L')
+        raw = Image.open(img_path)
+        
+        # Use built-in alpha channel as mask if available (transparent background PNG)
+        if raw.mode == 'RGBA':
+            r, g, b, a = raw.split()
+            mask = a.resize((430, 490), Image.Resampling.LANCZOS)
+            img = raw.convert('L')
+        else:
+            img = raw.convert('L')
+            mask = Image.new('L', img.size, 255)
+
+        # Try rembg as a fallback to improve mask
+        try:
+            from rembg import remove
+            rgba = remove(raw)
+            if rgba.mode == 'RGBA':
+                _, _, _, a2 = rgba.split()
+                mask = a2
+        except Exception:
+            pass  # Keep the alpha mask from above or full white mask
     
     # Resize and crop to 430x490 for a larger portrait
     img = ImageOps.fit(img, (430, 490), Image.Resampling.LANCZOS)
+    mask = ImageOps.fit(mask, (430, 490), Image.Resampling.LANCZOS)
     
-    # Remove background using rembg
-    try:
-        from rembg import remove
-        img = remove(img)
-        # Extract alpha mask
-        if img.mode == 'RGBA':
-            r, g, b, a = img.split()
-            mask = a
-            # Create a solid black background
-            bg = Image.new('RGB', img.size, (0, 0, 0))
-            bg.paste(img, mask=mask)
-            img = bg.convert('L')
-        else:
-            img = img.convert('L')
-            mask = Image.new('L', img.size, 255)
-    except ImportError:
-        img = img.convert('L')
-        mask = Image.new('L', img.size, 255)
+    img = ImageOps.autocontrast(img, cutoff=2)
+    img = img.filter(ImageFilter.UnsharpMask(radius=2, percent=180))
     
-    img = ImageOps.autocontrast(img, cutoff=1)
-    img = img.filter(ImageFilter.UnsharpMask(radius=3, percent=140))
-    
-    # Invert the image so that bright parts of the face get more dots in dark mode
+    # Invert so dark face features (hair, eyes, shadows) become the dot art pattern
     img = ImageOps.invert(img)
     
     img_array = np.array(img, dtype=float)
