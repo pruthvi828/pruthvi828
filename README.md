@@ -25,8 +25,7 @@
       <br>
       <div align="center">
         <img src="https://streak-stats.demolab.com/?user=pruthvi828&hide_border=true&background=0A101F&stroke=22D3EE&ring=A78BFA&fire=10B981&currStreakLabel=22D3EE&sideLabels=94A3B8&currStreakNum=F8FAFC&sideNums=F8FAFC&dates=64748B&titleColor=22D3EE" width="48%" />
-        <img src="./pcb-card.svg" width="30%" />
-        <img src="./animated_ascii.svg" width="18%" />
+        <img src="./pcb-card.svg" width="48%" />
       </div>
     </td>
   </tr>

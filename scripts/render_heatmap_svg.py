@@ -91,6 +91,37 @@ def render_heatmap():
         
         svg_content += f'      <rect class="box" x="{x}" y="{y}" width="{BOX_SIZE}" height="{BOX_SIZE}" rx="2" fill="{color}" style="animation-delay: {delay}s; transform-origin: {x + BOX_SIZE/2}px {y + BOX_SIZE/2}px;" />\n'
 
+    # Build an animated snake path slithering through the grid
+    snake_points = []
+    for w in range(0, WEEKS // 2, 2):
+        x1 = w * (BOX_SIZE + BOX_SPACING) + BOX_SIZE / 2
+        x2 = (w + 1) * (BOX_SIZE + BOX_SPACING) + BOX_SIZE / 2
+        snake_points.append(f"{x1},{BOX_SIZE / 2}")
+        snake_points.append(f"{x1},{6 * (BOX_SIZE + BOX_SPACING) + BOX_SIZE / 2}")
+        snake_points.append(f"{x2},{6 * (BOX_SIZE + BOX_SPACING) + BOX_SIZE / 2}")
+        snake_points.append(f"{x2},{BOX_SIZE / 2}")
+    
+    snake_path_d = "M " + " L ".join(snake_points)
+    
+    svg_content += f'''
+    <!-- Animated Snake Slithering Over Heatmap -->
+    <g class="snake">
+      <rect width="10" height="10" rx="2" fill="#0e4429">
+        <animateMotion path="{snake_path_d}" dur="15s" repeatCount="indefinite" begin="-0.6s" />
+      </rect>
+      <rect width="10" height="10" rx="2" fill="#26a641">
+        <animateMotion path="{snake_path_d}" dur="15s" repeatCount="indefinite" begin="-0.4s" />
+      </rect>
+      <rect width="10" height="10" rx="2" fill="#39d353">
+        <animateMotion path="{snake_path_d}" dur="15s" repeatCount="indefinite" begin="-0.2s" />
+      </rect>
+      <!-- Snake Head -->
+      <rect width="11" height="11" rx="3" fill="#A78BFA" stroke="#22D3EE" stroke-width="1.5">
+        <animateMotion path="{snake_path_d}" dur="15s" repeatCount="indefinite" begin="0s" />
+      </rect>
+    </g>
+    '''
+
     svg_content += """    </g>
 </svg>"""
 
