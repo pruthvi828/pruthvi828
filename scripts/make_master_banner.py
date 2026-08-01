@@ -65,6 +65,17 @@ def build_banner():
     # SVG dimensions
     SVG_W, SVG_H = 900, 560
 
+    # CSS-based twinkle animation (much more compact than SMIL)
+    # Define 10 stagger classes, assign each dot to one
+    NUM_CLASSES = 10
+    stagger_css = ""
+    for i in range(NUM_CLASSES):
+        delay = i * 0.8
+        dur   = 1.5 + (i % 4) * 0.6
+        stagger_css += (
+            f'.tw{i}{{animation:tw {dur:.1f}s {delay:.1f}s infinite ease-in-out;}}'
+        )
+
     lines = [
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {SVG_W} {SVG_H}" width="{SVG_W}" height="{SVG_H}">',
         '<style>',
@@ -74,6 +85,10 @@ def build_banner():
         '  .key  { fill: #10B981; font-family: monospace; font-size: 17px; }',
         '  .val  { fill: #C4B5FD; font-family: monospace; font-size: 17px; font-weight: bold; }',
         '  .sep  { fill: none; stroke: #22D3EE; stroke-width: 1.5; opacity: 0.5; }',
+        '  @keyframes tw { 0%,100%{opacity:.15} 50%{opacity:1} }',
+        f'  @keyframes blink {{ 0%,100%{{opacity:1}} 50%{{opacity:0}} }}',
+        f'  .cursor{{animation:blink 1.1s infinite;}}',
+        f'  {stagger_css}',
         '</style>',
 
         # Background
@@ -96,24 +111,16 @@ def build_banner():
         '<text x="470" y="350"><tspan class="key">Core.Lang </tspan><tspan class="val"> C · C++ · Python</tspan></text>',
 
         # Blinking cursor
-        '<rect x="470" y="370" width="10" height="18" fill="#22D3EE">'
-        '<animate attributeName="opacity" values="1;0;1" dur="1.1s" repeatCount="indefinite"/></rect>',
+        '<rect x="470" y="370" width="10" height="18" fill="#22D3EE" class="cursor"/>',
 
-        # Portrait group (offset to center in left half)
+        # Portrait group
         '<g transform="translate(20, 30)">',
     ]
 
-    # Dots with continuous twinkling
+    # Dots using CSS class-based animation (compact)
     for x, y in portrait_dots:
-        delay = random.uniform(0, 8)
-        dur   = random.uniform(1.5, 4.0)
-        lines.append(
-            f'<rect x="{x}" y="{y}" width="2" height="2" class="dot">'
-            f'<animate attributeName="opacity" values="0.2;1;0.2" '
-            f'keyTimes="0;0.5;1" begin="{delay:.2f}s" dur="{dur:.2f}s" '
-            f'repeatCount="indefinite" calcMode="spline" '
-            f'keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/></rect>'
-        )
+        cls = random.randint(0, NUM_CLASSES - 1)
+        lines.append(f'<rect x="{x}" y="{y}" width="2" height="2" class="dot tw{cls}"/>')
 
     lines.append('</g>')
     lines.append('</svg>')
