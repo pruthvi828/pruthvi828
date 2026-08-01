@@ -125,20 +125,7 @@ def build_banner():
     # Subsample dots to prevent file size blowup
     portrait_dots = random.sample(portrait_dots, min(len(portrait_dots), 12000))
     
-    # Travellers
-    num_travellers = 500
-    l1 = get_logo_points(0, num_travellers)
-    l2 = get_logo_points(1, num_travellers)
-    l3 = get_logo_points(2, num_travellers)
-    
-    # Match using linear sum assignment
-    cost12 = np.linalg.norm(l1[:, None] - l2, axis=2)
-    _, cols12 = linear_sum_assignment(cost12)
-    l2_matched = l2[cols12]
-    
-    cost23 = np.linalg.norm(l2_matched[:, None] - l3, axis=2)
-    _, cols23 = linear_sum_assignment(cost23)
-    l3_matched = l3[cols23]
+    # Travellers removed
 
     svg_content = [
         '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 610" width="1180" height="610">',
@@ -169,15 +156,7 @@ def build_banner():
         
     svg_content.append('</g>')
 
-    # Travellers
-    for i in range(num_travellers):
-        p1 = l1[i]
-        p2 = l2_matched[i]
-        p3 = l3_matched[i]
-        
-        # Opacity hidden during portrait phase (first 3s of 14.2s loop)
-        path = f'M {p1[0]},{p1[1]} L {p2[0]},{p2[1]} L {p3[0]},{p3[1]} L {p1[0]},{p1[1]}'
-        svg_content.append(f'<rect width="2" height="2" class="traveller"><animateMotion path="{path}" dur="14.2s" repeatCount="indefinite" keyPoints="0;0.2;0.5;0.7;1" keyTimes="0;0.21;0.5;0.71;1" calcMode="linear" /><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.21;0.22;0.99;1" dur="14.2s" repeatCount="indefinite" /></rect>')
+    # Travellers removed
 
     svg_content.append('</svg>')
     
