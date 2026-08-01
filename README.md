@@ -1,5 +1,9 @@
 <div align="center">
 
+<img src="./dark.svg" width="100%"/>
+
+<br>
+
 <!-- Social Badges -->
 <a href="#"><img src="https://img.shields.io/badge/LinkedIn-%230A101F.svg?style=for-the-badge&logo=linkedin&logoColor=22D3EE" alt="LinkedIn"/></a>&nbsp;
 <a href="#"><img src="https://img.shields.io/badge/Instagram-%230A101F.svg?style=for-the-badge&logo=instagram&logoColor=22D3EE" alt="Instagram"/></a>&nbsp;
