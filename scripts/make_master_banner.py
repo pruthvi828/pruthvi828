@@ -60,7 +60,7 @@ def build_banner():
     # Dither and filter by mask
     dithered_dots = floyd_steinberg_dither(img_array)
     portrait_dots = [(x, y) for x, y in dithered_dots if mask_array[y, x] > 128]
-    portrait_dots = random.sample(portrait_dots, min(len(portrait_dots), 15000))
+    portrait_dots = random.sample(portrait_dots, min(len(portrait_dots), 6000))
 
     # SVG dimensions
     SVG_W, SVG_H = 900, 560
