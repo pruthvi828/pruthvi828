@@ -5,10 +5,8 @@
 <br>
 
 <!-- Social Badges -->
-<a href="#"><img src="https://img.shields.io/badge/LinkedIn-%230A101F.svg?style=for-the-badge&logo=linkedin&logoColor=22D3EE" alt="LinkedIn"/></a>&nbsp;
-<a href="#"><img src="https://img.shields.io/badge/Instagram-%230A101F.svg?style=for-the-badge&logo=instagram&logoColor=22D3EE" alt="Instagram"/></a>&nbsp;
-<a href="#"><img src="https://img.shields.io/badge/Facebook-%230A101F.svg?style=for-the-badge&logo=facebook&logoColor=22D3EE" alt="Facebook"/></a>&nbsp;
-<a href="#"><img src="https://img.shields.io/badge/Portfolio-%230A101F.svg?style=for-the-badge&logo=web&logoColor=22D3EE" alt="Portfolio"/></a>
+<a href="https://www.linkedin.com/in/pruthvi-jadhav-28767a309/?skipRedirect=true"><img src="https://img.shields.io/badge/LinkedIn-%230A101F.svg?style=for-the-badge&logo=linkedin&logoColor=22D3EE" alt="LinkedIn"/></a>&nbsp;
+<a href="#"><img src="https://img.shields.io/badge/Instagram-%230A101F.svg?style=for-the-badge&logo=instagram&logoColor=22D3EE" alt="Instagram"/></a>
 
 <br><br>
 
