@@ -74,7 +74,7 @@
 | :--- | :--- | :--- | :--- |
 | **[TARS Embedded Suite](https://github.com/pruthvi828/TARS-)** | Embedded Hardware / AI | `KiCad` `ESP32-32U` `DFPlayer` `C++` | Custom-designed multi-layer KiCad PCB, voice synthesis module, and sensory feedback loop. |
 | **[Phone Clean & Diagnostics](https://github.com/pruthvi828)** | Android Internals / DSP | `Python` `FastAPI` `ADB` `WebAudio FFT` | Low-level display refresh pinning (120Hz), optical PPG heart rate biometrics, and acoustic ejection. |
-| **[Echo-Balancer (e-Yantra)](https://github.com/pruthvi828)** | Robotics & Dynamics | `C++` `PID` `IMU Fusion` `Hardware` | IIT Bombay eYRC robotics competition entry; autonomous 2-wheel self-balancing inverted pendulum. |
+| **[Echo-Balancer (e-Yantra)](https://github.com/pruthvi828/EYAN)** | Robotics & Dynamics | `C++` `PID` `IMU Fusion` `Hardware` | IIT Bombay eYRC robotics competition entry; autonomous 2-wheel self-balancing inverted pendulum. |
 | **[DR-DOOM Workshop](https://github.com/pruthvi828/DR-DOOM-WORKSHOP)** | Systems Automation | `PowerShell` `Python` `CLI` | Modular system automation framework recognized by the community (**6★ Stars, 11 Forks**). |
 | **[Canva-Automate](https://github.com/pruthvi828/Canva-Automate)** | Headless Pipeline | `Python` `Selenium` `PIL` | Automated headless graphic design processing, batch certificate creation, and asset exports. |
 | **[UniStay Platform](https://github.com/pruthvi828/unistay_fronted)** | Full-Stack Systems | `TypeScript` `React` `Tailwind` `REST` | Full-stack platform streamlining verified student housing booking and inventory management. |
