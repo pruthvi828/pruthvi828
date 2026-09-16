@@ -1,4 +1,4 @@
-name: Update profile art
+﻿name: Update Profile Art & OSS Radar
 
 "on":
   schedule:
@@ -11,23 +11,31 @@ permissions:
   contents: write
 
 jobs:
-  heatmap:
+  profile-sync:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - run: pip install requests beautifulsoup4
-      - run: python scripts/fetch_contributions.py
-      - run: python scripts/render_heatmap_svg.py
-      - name: Generate github-snake.svg
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+      - name: Fetch and render contributions heatmap
+        run: |
+          python scripts/fetch_contributions.py
+          python scripts/render_heatmap_svg.py
+      - name: Generate GitHub contribution snake
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: pruthvi828
           outputs: |
             github-snake.svg?color_snake=#A78BFA&color_dots=#2d3343,#10B981,#0891B2,#22D3EE,#A78BFA
-      - uses: stefanzweifel/git-auto-commit-action@v5
+      - name: Scout Open Source Radar
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/oss_scout.py OSS_RADAR.md
+      - name: Commit updated art and radar
+        uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: refresh contribution graph and snake [skip ci]"
-          file_pattern: "data/contributions.json contrib-heatmap.svg github-snake.svg"
+          commit_message: "chore: sync profile art and open-source radar [skip ci]"
+          file_pattern: "data/contributions.json contrib-heatmap.svg github-snake.svg OSS_RADAR.md"
