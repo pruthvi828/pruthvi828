@@ -83,6 +83,7 @@
 
 | Project | Domain | Technologies | Impact & Engineering Highlights |
 | :--- | :--- | :--- | :--- |
+| **[CyberDesk Phone Suite](https://github.com/pruthvi828/CyberDesk-Phone-Suite)** | Systems & Hardware Bridge | `FastAPI` `ADB` `WebAudio FFT` `Biometrics` | Real-time low-latency Android hardware control, 120Hz audio DSP visualizer, optical PPG heart monitor, and autonomous safe OSS scout. |
 | **[TARS Embedded Suite](https://github.com/pruthvi828/TARS-)** | Embedded Hardware & AI | `KiCad` `ESP32-32U` `DFPlayer` `3D Print` | Custom 2-layer KiCad PCB, ESP32-32U core, hardware speech synthesis, and custom 3D printed enclosure. |
 | **[Echo-Balancer](https://github.com/pruthvi828/EYAN)** | Robotics & Dynamics | `C++` `PID` `Laser Cut` `IMU Fusion` | IIT Bombay eYRC robotics competition entry; inverted-pendulum self-balancing dynamics with laser-cut chassis. |
 | **[Phone Clean & Diagnostics](https://github.com/pruthvi828)** | Android Internals / DSP | `FastAPI` `ADB Shell` `WebAudio FFT` `PPG` | Low-level 120Hz display pinning, optical photoplethysmography (PPG) biometrics, and acoustic ejection. |
