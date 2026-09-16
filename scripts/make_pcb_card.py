@@ -1,4 +1,4 @@
-import os
+﻿import os
 
 OUTPUT_SVG = "pcb-card.svg"
 
@@ -121,13 +121,13 @@ svg_content += "\n<!-- Chips -->\n"
 # Center Y is ~112
 
 # MCU Chip
-svg_content += draw_chip(90, 75, 100, 75, "MCU-828", "Embedded System")
+svg_content += draw_chip(90, 75, 100, 75, "ESP32-CORE", "Xtensa Dual-Core")
 
 # Software / Memory Chip
-svg_content += draw_chip(290, 40, 100, 50, "MEM-DEV", "Software Dev")
+svg_content += draw_chip(290, 40, 100, 50, "RF-ANTENNA", "50Ω Match · 2.4G")
 
 # Hardware / FPGA Chip
-svg_content += draw_chip(290, 130, 100, 50, "HW-KICAD", "PCB Routing")
+svg_content += draw_chip(290, 130, 100, 50, "FABRICATION", "KiCad · 3D · Laser")
 
 svg_content += """
 <!-- Vias (Holes) -->

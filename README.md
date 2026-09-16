@@ -14,8 +14,8 @@
 
 ```
 ╔══════════════════════════════════════════════════════════════════════════════════════════════╗
-║  PRUTHVI JADHAV // SENIOR SYSTEMS, EMBEDDED & AUTOMATION ENGINEER                           ║
-║  Core: KiCad PCB Architecture · Robotics (e-Yantra) · Android ADB/DSP · Autonomous Workflows ║
+║  PRUTHVI JADHAV // HARDWARE, RF & DIGITAL FABRICATION SYSTEMS ENGINEER                       ║
+║  Core: ESP32 Architecture · Antenna & RF Design · KiCad PCB Layout · 3D Printing · Laser Cut ║
 ║  Location: India  ·  Telemetry: Active  ·  Open-Source Scout: Online (04:30 UTC Daily)       ║
 ╚══════════════════════════════════════════════════════════════════════════════════════════════╝
 ```
@@ -24,43 +24,46 @@
 
 ---
 
-### 🛰️ Engineering Pillars & Core Competencies
+### 🛰️ Hardware Engineering & Fabrication Pillars
 
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h4>⚡ 1. Embedded Systems & Hardware Architecture</h4>
+      <h4>⚡ 1. ESP32 & Embedded Microcontroller Systems</h4>
       <ul>
-        <li><b>Custom PCB Engineering:</b> Schematic capture, multi-layer routing, impedance matching, and design-for-manufacturing in <b>KiCad</b>.</li>
-        <li><b>Microcontroller Architectures:</b> ESP32 (ESP32-DEVKITC-32U), STM32, Arduino, and 8051.</li>
-        <li><b>Hardware Communication:</b> I2C, SPI, UART, PWM, and ADC sensor telemetry.</li>
-        <li><b>Audio & Peripherals:</b> DFR0299 audio synthesis, power distribution circuitry, and transient voltage suppression.</li>
+        <li><b>Microcontroller Core:</b> Deep expertise in <b>ESP32</b> (ESP32-DEVKITC-32U, Xtensa dual-core 240MHz), STM32, and Arduino.</li>
+        <li><b>Firmware & RTOS:</b> Deterministic real-time multitasking with <b>FreeRTOS</b>, hardware timers, DMA, and ultra-low-power deep sleep cycles.</li>
+        <li><b>Bus Protocols:</b> Hardware UART, high-speed SPI, I2C, I2S audio streaming, and ADC sensor conditioning.</li>
+        <li><b>OTA & Diagnostics:</b> Over-the-air firmware deployment, serial debugging, and logic analyzer bus decoding.</li>
       </ul>
     </td>
     <td width="50%" valign="top">
-      <h4>🤖 2. Autonomous Robotics & Dynamic Control</h4>
+      <h4>📡 2. RF Engineering, Antennas & Wireless</h4>
       <ul>
-        <li><b>IIT Bombay e-Yantra:</b> Competed in <i>Echo-Balancer</i> (eYRC), developing closed-loop inverted-pendulum self-balancing robots.</li>
-        <li><b>State Estimation & Control:</b> Real-time PID feedback loops, Kalman filtering, and IMU sensor fusion.</li>
-        <li><b>UAV & Drone Systems:</b> Autonomous quadcopter airframes, ESC brushless motor tuning, and radio-telemetry calibration.</li>
+        <li><b>Antenna Design:</b> 2.4 GHz PCB trace antennas (inverted-F, meandered IFA) and external IPEX/U.FL antenna matching networks.</li>
+        <li><b>RF Trace Geometry:</b> 50Ω controlled-impedance coplanar waveguides with ground and microstrip routing.</li>
+        <li><b>Signal Integrity:</b> Minimizing return loss (S11), impedance discontinuities, and RF harmonics.</li>
+        <li><b>EMI/EMC Shielding:</b> Continuous ground stitching vias, isolation fences, and noise-immune power decoupling.</li>
       </ul>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h4>📱 3. Low-Level Android Internals & Signal Processing</h4>
+      <h4>📐 3. Custom PCB Design & Manufacturing (KiCad)</h4>
       <ul>
-        <li><b>Low-Level ADB Tuning:</b> Shell-level SurfaceFlinger display pinning (120Hz continuous refresh rate), governor profiling, and system-level diagnostics.</li>
-        <li><b>Optical Biometric Sensing (PPG):</b> Real-time photoplethysmography heart rate detection using Camera2 optical luminance streams and systolic peak detection.</li>
-        <li><b>Digital Signal Processing (DSP):</b> 1024-point WebAudio Fast Fourier Transform (FFT) real-time 120 FPS audio spectrum visualizers.</li>
+        <li><b>EDA Toolchain:</b> Schematic capture, multi-layer routing, design rule checks (DRC), and 3D modeling in <b>KiCad</b>.</li>
+        <li><b>Board Architecture:</b> Star grounding, analog/digital ground plane partitioning, thermal via heatsinks, and copper pours.</li>
+        <li><b>Design for Manufacturing (DFM):</b> Complete Gerber, drill, and BOM generation for automated SMD (0603/0805, QFN) assembly.</li>
+        <li><b>Audio & Power Stages:</b> Dedicated hardware synthesis (DFR0299), transient voltage suppression (TVS), and LDO regulation.</li>
       </ul>
     </td>
     <td width="50%" valign="top">
-      <h4>⚙️ 4. Autonomous Systems & Cloud Automation</h4>
+      <h4>🖨️ 4. Digital Fabrication & Rapid Prototyping</h4>
       <ul>
-        <li><b>CI/CD Cron Dispatches:</b> Production GitHub Actions workflows executing daily scheduled intelligence scouts and data pipelines.</li>
-        <li><b>High-Yield Scripting:</b> PowerShell, Bash, and Python automation frameworks (<b>DR-DOOM</b> suite with 17+ stars and forks).</li>
-        <li><b>Headless Graphics Pipelines:</b> Autonomous Canva API integrations and programmatic certificate generation engines.</li>
+        <li><b>3D Printing (Additive):</b> Custom snap-fit enclosures, sensor brackets, and structural drone mounts engineered for FDM (PLA/PETG/ABS).</li>
+        <li><b>Laser Cutting (Subtractive):</b> Precision vector kerf compensation, interlocking tabbed joints, and acrylic/MDF robotic chassis.</li>
+        <li><b>Mechanical CAD:</b> 2D/3D CAD drafting (AutoCAD, Fusion 360) ensuring 0.1mm tolerance stack-up with internal PCBs.</li>
+        <li><b>Hardware-Software Integration:</b> Building rugged physical prototypes from raw stock to working embedded products.</li>
       </ul>
     </td>
   </tr>
@@ -68,41 +71,49 @@
 
 ---
 
+### 🤖 Autonomous Robotics & Low-Level Internals
+
+- **IIT Bombay e-Yantra (Echo-Balancer):** Competed in the e-Yantra Robotics Competition (eYRC), developing an autonomous 2-wheel inverted-pendulum self-balancing robot utilizing closed-loop PID control and real-time IMU sensor fusion.
+- **Autonomous UAV & Drone Dynamics:** Multi-rotor quadcopter airframe assembly, ESC brushless motor timing, and radio-telemetry links.
+- **Low-Level Android ADB & DSP:** Low-level SurfaceFlinger display pinning (120Hz continuous refresh rate), real-time optical PPG biometric pulse sensing via Camera2, and 120 FPS audio FFT spectrum analysis.
+
+---
+
 ### 🚀 Flagship Engineering Portfolio
 
-| Project | Domain | Technologies | Impact & Highlights |
+| Project | Domain | Technologies | Impact & Engineering Highlights |
 | :--- | :--- | :--- | :--- |
-| **[TARS Embedded Suite](https://github.com/pruthvi828/TARS-)** | Embedded Hardware / AI | `KiCad` `ESP32-32U` `DFPlayer` `C++` | Custom-designed multi-layer KiCad PCB, voice synthesis module, and sensory feedback loop. |
-| **[Phone Clean & Diagnostics](https://github.com/pruthvi828)** | Android Internals / DSP | `Python` `FastAPI` `ADB` `WebAudio FFT` | Low-level display refresh pinning (120Hz), optical PPG heart rate biometrics, and acoustic ejection. |
-| **[Echo-Balancer (e-Yantra)](https://github.com/pruthvi828/EYAN)** | Robotics & Dynamics | `C++` `PID` `IMU Fusion` `Hardware` | IIT Bombay eYRC robotics competition entry; autonomous 2-wheel self-balancing inverted pendulum. |
+| **[TARS Embedded Suite](https://github.com/pruthvi828/TARS-)** | Embedded Hardware & AI | `KiCad` `ESP32-32U` `DFPlayer` `3D Print` | Custom 2-layer KiCad PCB, ESP32-32U core, hardware speech synthesis, and custom 3D printed enclosure. |
+| **[Echo-Balancer](https://github.com/pruthvi828/EYAN)** | Robotics & Dynamics | `C++` `PID` `Laser Cut` `IMU Fusion` | IIT Bombay eYRC robotics competition entry; inverted-pendulum self-balancing dynamics with laser-cut chassis. |
+| **[Phone Clean & Diagnostics](https://github.com/pruthvi828)** | Android Internals / DSP | `FastAPI` `ADB Shell` `WebAudio FFT` `PPG` | Low-level 120Hz display pinning, optical photoplethysmography (PPG) biometrics, and acoustic ejection. |
 | **[DR-DOOM Workshop](https://github.com/pruthvi828/DR-DOOM-WORKSHOP)** | Systems Automation | `PowerShell` `Python` `CLI` | Modular system automation framework recognized by the community (**6★ Stars, 11 Forks**). |
 | **[Canva-Automate](https://github.com/pruthvi828/Canva-Automate)** | Headless Pipeline | `Python` `Selenium` `PIL` | Automated headless graphic design processing, batch certificate creation, and asset exports. |
 | **[UniStay Platform](https://github.com/pruthvi828/unistay_fronted)** | Full-Stack Systems | `TypeScript` `React` `Tailwind` `REST` | Full-stack platform streamlining verified student housing booking and inventory management. |
 
 ---
 
-### 🛠️ Technical Arsenal & Ecosystem
+### 🛠️ Hardware & Maker Arsenal
 
 <p align="center">
-  <!-- Hardware & Embedded -->
-  <img src="https://img.shields.io/badge/KiCad-31465F?style=for-the-badge&logo=kicad&logoColor=white" />
+  <!-- Microcontrollers & Hardware -->
   <img src="https://img.shields.io/badge/ESP32-E7352C?style=for-the-badge&logo=espressif&logoColor=white" />
-  <img src="https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white" />
+  <img src="https://img.shields.io/badge/KiCad_EDA-31465F?style=for-the-badge&logo=kicad&logoColor=white" />
+  <img src="https://img.shields.io/badge/RF_&_Antennas-22D3EE?style=for-the-badge&logo=satellite&logoColor=black" />
+  <img src="https://img.shields.io/badge/3D_Printing-F34F29?style=for-the-badge&logo=ultimaker&logoColor=white" />
+  <img src="https://img.shields.io/badge/Laser_Cutting-10B981?style=for-the-badge&logo=target&logoColor=white" />
+  <br>
+  <!-- CAD & Firmware -->
+  <img src="https://img.shields.io/badge/AutoCAD-E51000?style=for-the-badge&logo=autodesk&logoColor=white" />
   <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black" />
   <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
+  <img src="https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white" />
+  <img src="https://img.shields.io/badge/FreeRTOS-32B877?style=for-the-badge&logo=freertos&logoColor=white" />
   <br>
-  <!-- Backend & Systems -->
+  <!-- Software & Cloud -->
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
-  <img src="https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge&logo=powershell&logoColor=white" />
   <img src="https://img.shields.io/badge/Android_ADB-3DDC84?style=for-the-badge&logo=android&logoColor=white" />
-  <img src="https://img.shields.io/badge/Linux_Kernel-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
-  <br>
-  <!-- Frontend & Cloud -->
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
   <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
 </p>
 
 ---
@@ -117,6 +128,11 @@
 ---
 
 <div align="center">
+
+<!-- Animated Custom PCB Silkscreen Card -->
+<img src="./pcb-card.svg" width="75%" />
+
+<br><br>
 
 <!-- Stats Row -->
 <img src="https://github-readme-stats.vercel.app/api?username=pruthvi828&show_icons=true&theme=dark&hide_border=true&title_color=22D3EE&icon_color=A78BFA&text_color=94A3B8&bg_color=0A101F&count_private=true&include_all_commits=true&cache_seconds=86400" width="48%" />
@@ -134,11 +150,6 @@
 
 <br><br>
 
-<!-- PCB Card -->
-<img src="./pcb-card.svg" width="70%" />
-
-<br><br>
-
-<sub><i>"Building real things from silicon to software."</i> — <b>Pruthvi Jadhav</b></sub>
+<sub><i>"Bridging silicon, RF acoustics, and physical fabrication into intelligent machines."</i> — <b>Pruthvi Jadhav</b></sub>
 
 </div>
