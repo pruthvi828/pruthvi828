@@ -6,6 +6,8 @@
 | Repository | Issue Title | Labels | Comments | Link |
 | :
 ### 🏆 Active Dispatched Pull Requests
+- 🚀 **[TheAlgorithms/Python #15361](https://github.com/TheAlgorithms/Python/pull/15361)**: sorts: make tree_sort accept any Comparable items (Ref #15234)
+- 🚀 **[TheAlgorithms/Python #15360](https://github.com/TheAlgorithms/Python/pull/15360)**: sorts: make bubble_sort_recursive accept any Comparable items (Ref #15234)
 - 🚀 **[TheAlgorithms/Python #15359](https://github.com/TheAlgorithms/Python/pull/15359)**: sorts: make bubble_sort_recursive accept any Comparable items (Ref #15234)
 - 🚀 **[ESPHome Devices #1872](https://github.com/esphome/devices.esphome.io/pull/1872)**: ix(Tuya-DY-CK400A-Garage-Door-Opener): update dead datasheet link (Ref #1576)
 - 🚀 **[ESPHome Devices #1871](https://github.com/esphome/devices.esphome.io/pull/1871)**: ix(Tuya-Smart-Plug-20A-EU_BL0942): update documentation link (Ref #1576)
