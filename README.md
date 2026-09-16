@@ -130,7 +130,7 @@
 <div align="center">
 
 <!-- Animated Custom PCB Silkscreen Card -->
-<img src="./pcb-card.svg" width="75%" />
+<img src="./pcb-card.svg" width="75%" /><br><br><img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=pruthvi828&theme=solarized-dark" width="98%" />
 
 <br><br>
 
