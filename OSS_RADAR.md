@@ -1,13 +1,13 @@
 # 📡 Daily Open Source Radar
 
-> **Last Synchronized:** `2026-09-17 11:48 UTC` via automated GitHub Actions daily dispatch.
+> **Last Synchronized:** `2026-09-18 11:23 UTC` via automated GitHub Actions daily dispatch.
 > Curated unassigned high-impact open-source opportunities tailored for systems, embedded, and full-stack engineering.
 
 | Repository | Issue Title | Labels | Comments | Link |
 | :--- | :--- | :--- | :---: | :---: |
-| **Scottcjn/rustchain-bounties** | [ONBOARD: 3 RTC] Test the Miner and Post Your Hardware Report | `good first issue` `bounty` | 96 | [View Issue ↗](https://github.com/Scottcjn/rustchain-bounties/issues/2784) |
-| **Scottcjn/rustchain-bounties** | Write a Review of RustChain — 3 RTC (Good First Issue) | `good first issue` `bounty` | 110 | [View Issue ↗](https://github.com/Scottcjn/rustchain-bounties/issues/443) |
-| **Scottcjn/Rustchain** | [BOUNTY] Share Why You Starred RustChain — 3 RTC + Community Shoutout (Pool: 300 RTC) | `help wanted` `good first issue` | 174 | [View Issue ↗](https://github.com/Scottcjn/Rustchain/issues/165) |
+| **Scottcjn/rustchain-bounties** | Write a Review of RustChain — 3 RTC (Good First Issue) | `good first issue` `bounty` | 111 | [View Issue ↗](https://github.com/Scottcjn/rustchain-bounties/issues/443) |
+| **Scottcjn/Rustchain** | [BOUNTY] Share Why You Starred RustChain — 3 RTC + Community Shoutout (Pool: 300 RTC) | `help wanted` `good first issue` | 175 | [View Issue ↗](https://github.com/Scottcjn/Rustchain/issues/165) |
+| **Scottcjn/rustchain-bounties** | [ONBOARD: 3 RTC] Test the Miner and Post Your Hardware Report | `good first issue` `bounty` | 98 | [View Issue ↗](https://github.com/Scottcjn/rustchain-bounties/issues/2784) |
 | **K1rL3s/maxo** | `calculate_chat_id_and_user_id`: теряет нулевые id и кидает `AssertionError` на неизвестном типе чата | `bug` `good first issue` | 0 | [View Issue ↗](https://github.com/K1rL3s/maxo/issues/300) |
 | **YeamimHossainSajid/CodeMonk** | Add AiServiceTest_9 unit test | `good first issue` `beginner` | 0 | [View Issue ↗](https://github.com/YeamimHossainSajid/CodeMonk/issues/300) |
 | **munirov/cremniy** | Документация по каждому модулю | `documentation` `good first issue` | 0 | [View Issue ↗](https://github.com/munirov/cremniy/issues/300) |
