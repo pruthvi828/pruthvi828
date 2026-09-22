@@ -1,67 +1,84 @@
 <div align="center">
 
-# Hi, I'm Pruthvi Jadhav 👋
-### **Embedded Systems & Firmware Engineer | Low-Level C++ • RTOS • Robotics**
+<img src="./dark.svg" width="100%"/>
+
+<br>
 
 <!-- Badges Row -->
 <a href="https://www.linkedin.com/in/pruthvi-jadhav-28767a309/"><img src="https://img.shields.io/badge/LinkedIn-0A101F?style=for-the-badge&logo=linkedin&logoColor=22D3EE" alt="LinkedIn"/></a>&nbsp;
 <a href="mailto:jadhavpruthvi828@gmail.com"><img src="https://img.shields.io/badge/Email-0A101F?style=for-the-badge&logo=gmail&logoColor=22D3EE" alt="Email"/></a>&nbsp;
 <a href="https://github.com/pruthvi828"><img src="https://img.shields.io/badge/GitHub-0A101F?style=for-the-badge&logo=github&logoColor=22D3EE" alt="GitHub"/></a>&nbsp;
-<a href="https://pruthvi828.github.io/tars-maze-navigation/"><img src="https://img.shields.io/badge/Live_Studio-60_FPS_Demo-38bdf8?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live Demo"/></a>
+<a href="https://pruthvi828.github.io/tars-maze-navigation/"><img src="https://img.shields.io/badge/Live_Studio-60_FPS_Demo-10B981?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live Demo"/></a>&nbsp;
+<img src="https://img.shields.io/badge/Status-100%25_Operational-06B6D4?style=for-the-badge&logo=statuspage&logoColor=white" alt="Status"/>
 
 <br><br>
 
-```cpp
-#include <iostream>
-
-struct SystemsEngineer {
-    const char* name = "Pruthvi Jadhav";
-    const char* focus = "Embedded Systems, Low-Level C++, Real-Time Firmware & Autonomous Robotics";
-    const char* primary_targets[4] = {"ESP32-S3/C6/P4", "ARM Cortex-M (STM32)", "FreeRTOS", "OpenCV"};
-};
 ```
-
----
+╔══════════════════════════════════════════════════════════════════════════════════════════════╗
+║  PRUTHVI JADHAV // EMBEDDED SYSTEMS & AUTONOMOUS ROBOTICS ENGINEER                           ║
+║  Core: Low-Level C++20 · FreeRTOS · ESP32-S3/C6/P4 · Hardware HAL · OpenCV · Kinematics      ║
+║  Status: Upstream Active · Contributor (Espressif & OpenCV) · Telemetry: Online (04:30 UTC)  ║
+╚══════════════════════════════════════════════════════════════════════════════════════════════╝
+```
 
 </div>
 
-## 📌 Core Engineering Profile
+---
 
-I specialize in **low-level C++, hardware abstraction layers (HAL), real-time multitasking (FreeRTOS), and autonomous pathfinding algorithms**.
+### 🛰️ Core Engineering Pillars
 
-* ⚡ **Upstream Open Source:** Active contributor to **[Espressif Systems](https://github.com/espressif/arduino-esp32)** (ESP32 core HAL) and **[OpenCV](https://github.com/opencv/opencv)**.
-* 🏎️ **Robotics Engine:** Author of **[TARS-MazeNav](https://github.com/pruthvi828/tars-maze-navigation)** — an autonomous navigation engine featuring 45° diagonal kinematics, zero dynamic heap allocation, and <2KB static RAM memory footprint.
-* 🔍 **Firmware Depth:** Interrupt Service Routines (ISRs), race-free concurrency, DMA buffers, hardware timer lifecycle, and peripheral driver development (I2C, SPI, UART, RMII Ethernet).
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h4>⚡ 1. Microcontroller Firmware & Low-Level C++</h4>
+      <ul>
+        <li><b>Microcontrollers:</b> Deep expertise in <b>ESP32-S3/C6/P4</b>, STM32 (ARM Cortex-M), and Xtensa dual-core architecture.</li>
+        <li><b>Deterministic RTOS:</b> Real-time multitasking with <b>FreeRTOS</b>, hardware timers, ISR lifecycle, and DMA memory pipelines.</li>
+        <li><b>Hardware Protocols:</b> High-speed SPI, I2C, UART, I2S audio, CAN/TWAI, and RMII/MDC Ethernet.</li>
+        <li><b>Memory Optimization:</b> Embedded firmware with zero dynamic heap allocation (<2KB static RAM footprint).</li>
+      </ul>
+    </td>
+    <td width="50%" valign="top">
+      <h4>🤖 2. Autonomous Robotics & Pathfinding</h4>
+      <ul>
+        <li><b>Dynamic Potential Fields:</b> Modified Flood-Fill potential field recalculations with directional momentum bias.</li>
+        <li><b>Championship Kinematics:</b> 45° diagonal trajectory compression with trapezoidal acceleration profiling (<i>v<sub>max</sub> = 3.5 m/s, a = 12 m/s²</i>).</li>
+        <li><b>Computer Vision:</b> Real-time image processing, edge detection, and WebAssembly pipelines via <b>OpenCV</b>.</li>
+        <li><b>Sensor Fusion:</b> Multi-channel ToF (Time-of-Flight) and IR proximity sensor conditioning.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
 ---
 
-## 🚀 Upstream Open-Source Contributions
+### 🚀 Upstream Open-Source Contributions
 
-### 🔹 [Espressif Systems (`espressif/arduino-esp32`)](https://github.com/espressif/arduino-esp32) — *14.5k+ ⭐*
-* **[PR #12911](https://github.com/espressif/arduino-esp32/pull/12911) — `feat(timer): add std::function and lambda callback support`**  
-  *Engineered modern C++ lambda callback support for `timerAttachInterrupt()`. Eliminated critical ISR use-after-free race conditions and prevented uninitialized heap memory leaks across ESP32-S3, C6, and P4.*
-* **[PR #12928](https://github.com/espressif/arduino-esp32/pull/12928) — `fix(periman): correct ETHERNET_MCD typo to ETHERNET_MDC`**  
-  *Aligned Peripheral Manager (`periman`) with IEEE 802.3 Ethernet Management Data Clock specification while providing zero-regression backward compatibility.*
-* **[PR #12929](https://github.com/espressif/arduino-esp32/pull/12929) — `fix(partitions): correct littlefs partition subtype in large_littlefs_32MB.csv`**  
+#### 🔹 [Espressif Systems (`espressif/arduino-esp32`)](https://github.com/espressif/arduino-esp32) — *14.5k+ ⭐ Official ESP32 Core*
+* **[PR #12911](https://github.com/espressif/arduino-esp32/pull/12911) &bull; `feat(timer): add std::function and lambda callback support`**  
+  *Engineered modern C++ lambda callback support for `timerAttachInterrupt()`. Resolved critical ISR use-after-free race conditions and eliminated uninitialized heap memory leaks across ESP32-S3, C6, and P4.*
+* **[PR #12928](https://github.com/espressif/arduino-esp32/pull/12928) &bull; `fix(periman): correct ETHERNET_MCD typo to ETHERNET_MDC`**  
+  *Aligned Peripheral Manager (`periman`) with IEEE 802.3 Ethernet Management Data Clock specification with zero-regression backward-compatible aliasing.*
+* **[PR #12929](https://github.com/espressif/arduino-esp32/pull/12929) &bull; `fix(partitions): correct littlefs partition subtype in large_littlefs_32MB.csv`**  
   *Corrected partition table definitions, enabling out-of-the-box LittleFS VFS mounting for commercial 32MB flash modules.*
 
-### 🔹 [OpenCV Foundation (`opencv/opencv`)](https://github.com/opencv/opencv) — *78.5k+ ⭐*
-* **[PR #29978](https://github.com/opencv/opencv/pull/29978) — `doc(js_tutorials): fix broken precompiled opencv.js download URLs`**  
+#### 🔹 [OpenCV Foundation (`opencv/opencv`)](https://github.com/opencv/opencv) — *78.5k+ ⭐ World's #1 Computer Vision Library*
+* **[PR #29978](https://github.com/opencv/opencv/pull/29978) &bull; `doc(js_tutorials): fix broken precompiled opencv.js download URLs`**  
   *Resolved precompiled WebAssembly distribution endpoints across official OpenCV 4.x and 5.x documentation pipelines.*
 
 ---
 
-## 💻 Featured Technical Projects
+### 🏁 Featured Robotics Engine & Simulation Studio
 
 <table>
   <tr>
     <td width="60%">
-      <h3>🏁 TARS-MazeNav — Autonomous Micromouse Engine</h3>
-      <p>High-performance autonomous maze exploration and kinematics engine written in <b>C++ and Python</b> with real-time 60 FPS simulation studio.</p>
+      <h3>Autonomous Micromouse & Kinematics Studio (C++ / Python / WASM)</h3>
+      <p>High-performance autonomous maze exploration and kinematics engine with a <b>real-time 60 FPS interactive web studio</b>.</p>
       <ul>
-        <li><b>Modified Flood-Fill:</b> Dynamic Manhattan potential field recalculation with directional momentum bias.</li>
-        <li><b>45° Diagonal Kinematics:</b> Smooth trajectory compression with trapezoidal acceleration profiling (<i>v<sub>max</sub> = 3.5 m/s, a = 12 m/s²</i>).</li>
-        <li><b>Embedded Firmware:</b> Zero dynamic heap allocation operating under strict <b>&lt; 2 KB static RAM</b> on ESP32/STM32.</li>
+        <li><b>Dynamic Potential Fields:</b> Real-time FloodFill potential heatmap recalculation.</li>
+        <li><b>45° Diagonal Smooth Run:</b> Continuous curvature trajectory modeling for championship speed runs.</li>
+        <li><b>Embedded C++ Firmware:</b> Zero dynamic heap allocation operating under strict <b>&lt; 2 KB static RAM</b>.</li>
       </ul>
       <p>
         <a href="https://pruthvi828.github.io/tars-maze-navigation/"><b>👉 Launch Live 60 FPS Interactive Studio</b></a> &bull;
@@ -78,7 +95,7 @@ I specialize in **low-level C++, hardware abstraction layers (HAL), real-time mu
 
 ---
 
-## 🛠️ Technical Arsenal
+### 🛠️ Technical Arsenal
 
 <div align="center">
 
@@ -96,13 +113,19 @@ I specialize in **low-level C++, hardware abstraction layers (HAL), real-time mu
 
 <div align="center">
 
-### 📊 GitHub Activity
+### 🐍 Contribution Activity Stream
+
+<img src="./github-snake.svg" width="100%" alt="GitHub Snake Animation"/>
+
+<br><br>
+
+### 📊 Telemetry & Language Matrix
 
 <img src="https://github-readme-stats.vercel.app/api?username=pruthvi828&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" width="48%" />
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=pruthvi828&layout=compact&theme=tokyonight&hide_border=true" width="48%" />
 
 <br/>
 
-*Engineered with precision by **Pruthvi Jadhav** &bull; Always open to firmware, systems, and robotics opportunities.*
+*Designed & engineered by **Pruthvi Jadhav** &bull; Always open to discussing low-level systems, firmware, and robotics opportunities.*
 
 </div>
