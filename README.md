@@ -5,7 +5,7 @@
 
 <!-- Dynamic Animated Typing Subheader -->
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&duration=3000&pause=1000&color=22D3EE&center=true&vCenter=true&width=700&lines=Embedded+Systems+%26+Firmware+Architect;Low-Level+C%2B%2B17%2F20+%26+FreeRTOS+Specialist;Upstream+Contributor+%40+Espressif+Systems+(ESP-IDF%2FArduino);Autonomous+Robotics+%26+Kinematics+Algorithm+Engineer" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&duration=3000&pause=1000&color=22D3EE&center=true&vCenter=true&width=750&lines=Embedded+Systems+%26+Firmware+Architect;Low-Level+C%2B%2B17%2F20+%26+FreeRTOS+Specialist;Upstream+Contributor+%40+NVIDIA+%C2%B7+Espressif+%C2%B7+Arduino;Autonomous+Robotics+%26+CUDA+Compute+Engineer" alt="Typing SVG" />
 </a>
 
 <br><br>
@@ -28,8 +28,8 @@
 ```
 ╔══════════════════════════════════════════════════════════════════════════════════════════════╗
 ║  PRUTHVI JADHAV // LOW-LEVEL SYSTEMS & AUTONOMOUS ROBOTICS ENGINEER                          ║
-║  Core: Modern C++17/20 · FreeRTOS · ESP32-S3/C6/P4 · Hardware HAL · OpenCV · Kinematics      ║
-║  Telemetry: Upstream Contributor @ Espressif & OpenCV · Zero Dynamic Allocations             ║
+║  Core: Modern C++17/20 · FreeRTOS · ESP32-S3/C6/P4 · Hardware HAL · OpenCV · CUDA · Kinematics║
+║  Telemetry: Upstream Contributor @ NVIDIA · Espressif · Arduino · OpenCV                     ║
 ╚══════════════════════════════════════════════════════════════════════════════════════════════╝
 ```
 
@@ -39,11 +39,11 @@
 
 ## ⚡ About & Engineering Focus
 
-I build deterministic, memory-efficient systems at the boundary between hardware and software. My work focuses on **low-level C++, hardware abstraction layers (HAL), real-time multitasking (FreeRTOS), and autonomous pathfinding algorithms**.
+I build deterministic, memory-efficient systems at the boundary between hardware and software. My work focuses on **low-level C++, hardware abstraction layers (HAL), real-time multitasking (FreeRTOS), CUDA compute, and autonomous pathfinding algorithms**.
 
 - 🔬 **Firmware & Low-Level Architecture:** Interrupt Service Routines (ISRs), race-free concurrency, lockless ring buffers, DMA pipelines, and peripheral driver design (I2C, SPI, UART, RMII Ethernet).
 - 🏎️ **Autonomous Robotics & Kinematics:** Real-time motion planning, trajectory smoothing, dynamic flood-fill, and sensor fusion algorithms designed for microcontrollers with strict deterministic execution constraints.
-- 🌐 **Upstream Open Source:** Active contributor to **[Espressif Systems](https://github.com/espressif/arduino-esp32)** (ESP32 core HAL) and the **[OpenCV Foundation](https://github.com/opencv/opencv)**.
+- 🌐 **Upstream Open Source:** Active contributor to **[NVIDIA](https://github.com/NVIDIA/cuda-samples)**, **[Espressif Systems](https://github.com/espressif/arduino-esp32)**, **[Arduino](https://github.com/arduino/ArduinoCore-API)**, and the **[OpenCV Foundation](https://github.com/opencv/opencv)**.
 
 ---
 
@@ -58,6 +58,19 @@ I build deterministic, memory-efficient systems at the boundary between hardware
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td>
+        <b><a href="https://github.com/NVIDIA/cuda-samples">NVIDIA/cuda-samples</a></b><br/>
+        <sub>⭐ 18.2k+ • Official NVIDIA CUDA Samples</sub>
+      </td>
+      <td>
+        <b><a href="https://github.com/NVIDIA/cuda-samples/pull/462">PR #462</a>: <code>fix(test-runner): fix executable discovery and path resolution on Windows</code></b><br/>
+        <sub>Resolved Win32 <code>CreateProcess</code> path execution failures (<code>WinError 2</code>) across sample test runners and fixed binary discovery on Windows (Fixes #453).</sub>
+      </td>
+      <td>
+        <img src="https://img.shields.io/badge/PR-In_Review-yellow?style=flat-square&logo=github"/>
+      </td>
+    </tr>
     <tr>
       <td>
         <b><a href="https://github.com/espressif/arduino-esp32">espressif/arduino-esp32</a></b><br/>
