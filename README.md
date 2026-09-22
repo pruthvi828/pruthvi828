@@ -100,6 +100,19 @@ I build deterministic, memory-efficient systems at the boundary between hardware
     </tr>
     <tr>
       <td>
+        <b><a href="https://github.com/arduino/ArduinoCore-API">arduino/ArduinoCore-API</a></b><br/>
+        <sub>⭐ 1.2k+ • Official Arduino Core API</sub>
+      </td>
+      <td>
+        <b><a href="https://github.com/arduino/ArduinoCore-API/pull/282">PR #282</a>: <code>fix(IPAddress): remove redundant condition in fromString6</code></b><br/>
+        <sub>Eliminated tautological pointer conditions in IPv6 parser state machine and extended Catch2 unit test coverage for consecutive colon validations (Fixes #249).</sub>
+      </td>
+      <td>
+        <img src="https://img.shields.io/badge/PR-In_Review-yellow?style=flat-square&logo=github"/>
+      </td>
+    </tr>
+    <tr>
+      <td>
         <b><a href="https://github.com/opencv/opencv">opencv/opencv</a></b><br/>
         <sub>⭐ 78.5k+ • Computer Vision Library</sub>
       </td>
