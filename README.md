@@ -60,7 +60,7 @@
     <td width="50%" valign="top">
       <h4>🖨️ 4. Digital Fabrication & Rapid Prototyping</h4>
       <ul>
-        <li><b>3D Printing (Additive):</b> Custom snap-fit enclosures, sensor brackets, and structural drone mounts engineered for FDM (PLA/PETG/ABS).</li>
+      
         <li><b>Laser Cutting (Subtractive):</b> Precision vector kerf compensation, interlocking tabbed joints, and acrylic/MDF robotic chassis.</li>
         <li><b>Mechanical CAD:</b> 2D/3D CAD drafting (AutoCAD, Fusion 360) ensuring 0.1mm tolerance stack-up with internal PCBs.</li>
         <li><b>Hardware-Software Integration:</b> Building rugged physical prototypes from raw stock to working embedded products.</li>
