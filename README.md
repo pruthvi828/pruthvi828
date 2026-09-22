@@ -1,143 +1,86 @@
 <div align="center">
 
-<!-- Hero Banner Header -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,14,24,36&height=220&section=header&text=PRUTHVI%20JADHAV&fontSize=52&fontColor=ffffff&animation=twinkling&desc=Embedded%20Systems%20%E2%80%A2%20Modern%20C%2B%2B%20%E2%80%A2%20Autonomous%20Robotics&descSize=18&descAlign=50&descAlignY=64" width="100%"/>
+# Hi, I'm Pruthvi Jadhav 👋
+### **Embedded Systems & Firmware Engineer | Low-Level C++ • RTOS • Robotics**
 
-<!-- Dynamic Animated Typing Subheader -->
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&duration=3000&pause=1000&color=22D3EE&center=true&vCenter=true&width=750&lines=Embedded+Systems+%26+Firmware+Architect;Low-Level+C%2B%2B17%2F20+%26+FreeRTOS+Specialist;Upstream+Contributor+%40+NVIDIA+%C2%B7+Espressif+%C2%B7+Arduino;Autonomous+Robotics+%26+CUDA+Compute+Engineer" alt="Typing SVG" />
-</a>
+[![GitHub followers](https://img.shields.io/github/followers/spidyy19?label=Follow&style=social)](https://github.com/spidyy19)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com)
+[![Email](https://img.shields.io/badge/Email-jadhavpruthvi828%40gmail.com-D14836?style=flat&logo=gmail&logoColor=white)](mailto:jadhavpruthvi828@gmail.com)
 
-<br><br>
+```cpp
+#include <iostream>
 
-<!-- Contact & Social Badges -->
-<a href="https://www.linkedin.com/in/pruthvi-jadhav-28767a309/"><img src="https://img.shields.io/badge/LinkedIn-0A101F?style=for-the-badge&logo=linkedin&logoColor=22D3EE" alt="LinkedIn"/></a>&nbsp;
-<a href="mailto:jadhavpruthvi828@gmail.com"><img src="https://img.shields.io/badge/Email-0A101F?style=for-the-badge&logo=gmail&logoColor=22D3EE" alt="Email"/></a>&nbsp;
-<a href="https://github.com/pruthvi828"><img src="https://img.shields.io/badge/GitHub-0A101F?style=for-the-badge&logo=github&logoColor=22D3EE" alt="GitHub"/></a>&nbsp;
-<img src="https://img.shields.io/badge/System_Status-100%25_Operational-06B6D4?style=for-the-badge&logo=statuspage&logoColor=white" alt="Status"/>
-
-<br><br>
-
-<!-- GitHub Trophy Showcase -->
-<a href="https://github.com/ryo-ma/github-profile-trophy">
-  <img src="https://github-profile-trophy.vercel.app/?username=pruthvi828&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4&row=1&column=7" alt="GitHub Trophies" />
-</a>
-
-<br><br>
-
+struct Engineer {
+    const char* name = "Pruthvi Jadhav";
+    const char* focus = "Embedded Systems, Low-Level C++, RTOS, Autonomous Robotics";
+    const char* primary_targets[3] = {"ESP32-S3/C6/P4", "ARM Cortex-M (STM32)", "FreeRTOS"};
+};
 ```
-╔══════════════════════════════════════════════════════════════════════════════════════════════╗
-║  PRUTHVI JADHAV // LOW-LEVEL SYSTEMS & AUTONOMOUS ROBOTICS ENGINEER                          ║
-║  Core: Modern C++17/20 · FreeRTOS · ESP32-S3/C6/P4 · Hardware HAL · OpenCV · CUDA · Kinematics║
-║  Telemetry: Upstream Contributor @ NVIDIA · Espressif · Arduino · OpenCV                     ║
-╚══════════════════════════════════════════════════════════════════════════════════════════════╝
-```
+
+---
 
 </div>
 
+## 📌 About Me
+
+I am a systems-focused engineering student specializing in **low-level C++, real-time embedded firmware, and autonomous robotics navigation**.
+
+- 🔭 **Core Focus:** Hardware Abstraction Layers (HAL), Interrupt Service Routines (ISRs), FreeRTOS memory management, and deterministic embedded pathfinding.
+- ⚡ **Upstream Open Source:** Active contributor to **[Espressif Systems](https://github.com/espressif/arduino-esp32)** (ESP32 core HAL) and **[OpenCV](https://github.com/opencv/opencv)**.
+- 🏎️ **Robotics Engine:** Creator of **[TARS-MazeNav](https://github.com/pruthvi828/tars-maze-navigation)** — an autonomous navigation engine with 45° diagonal kinematics and embedded C++ firmware (<2KB static RAM).
+- 💬 **Ask me about:** C++17/C++20, ISR race conditions, peripheral drivers (I2C/SPI/UART/RMII), and potential field pathfinding.
+
 ---
 
-## ⚡ About & Engineering Focus
+## 🚀 Open Source Contributions
 
-I build deterministic, memory-efficient systems at the boundary between hardware and software. My work focuses on **low-level C++, hardware abstraction layers (HAL), real-time multitasking (FreeRTOS), CUDA compute, and autonomous pathfinding algorithms**.
+### 🔹 [Espressif Systems (`espressif/arduino-esp32`)](https://github.com/espressif/arduino-esp32) — *14.5k+ ⭐*
+* **[PR #12931](https://github.com/espressif/arduino-esp32/pull/12931) — `fix(zigbee): zero-initialize report_attr_cmd and set manuf_code in endpoint report helpers`**  
+  *Fixed uninitialized stack memory defect in Zigbee C++ HAL across 12 endpoint classes (`ZigbeeAnalog`, `ZigbeeTempSensor`, etc.), explicitly assigning standard `manuf_code` to eliminate non-deterministic payload behavior.*
+* **[PR #12911](https://github.com/espressif/arduino-esp32/pull/12911) — `feat(timer): add std::function and lambda callback support`**  
+  *Engineered modern C++ lambda callback support for `timerAttachInterrupt()`. Resolved critical ISR use-after-free race conditions and eliminated uninitialized heap memory leaks across ESP32-S3, C6, and P4.*
+* **[PR #12928](https://github.com/espressif/arduino-esp32/pull/12928) — `fix(periman): correct ETHERNET_MCD typo to ETHERNET_MDC`**  
+  *Aligned Peripheral Manager (`periman`) with IEEE 802.3 Ethernet Management Data Clock specification while providing zero-regression backward compatibility.*
+* **[PR #12929](https://github.com/espressif/arduino-esp32/pull/12929) — `fix(partitions): correct littlefs partition subtype in large_littlefs_32MB.csv`**  
+  *Fixed filesystem partition table definitions, enabling seamless out-of-the-box LittleFS VFS mounting for 32MB flash modules.*
 
-- 🔬 **Firmware & Low-Level Architecture:** Interrupt Service Routines (ISRs), race-free concurrency, lockless ring buffers, DMA pipelines, and peripheral driver design (I2C, SPI, UART, RMII Ethernet).
-- 🏎️ **Autonomous Robotics & Kinematics:** Real-time motion planning, trajectory smoothing, dynamic flood-fill, and sensor fusion algorithms designed for microcontrollers with strict deterministic execution constraints.
-- 🌐 **Upstream Open Source:** Active contributor to **[NVIDIA](https://github.com/NVIDIA/cuda-samples)**, **[Espressif Systems](https://github.com/espressif/arduino-esp32)**, **[Arduino](https://github.com/arduino/ArduinoCore-API)**, and the **[OpenCV Foundation](https://github.com/opencv/opencv)**.
+### 🔹 [NVIDIA (`NVIDIA/cuda-samples`)](https://github.com/NVIDIA/cuda-samples) — *6.4k+ ⭐*
+* **[PR #462](https://github.com/NVIDIA/cuda-samples/pull/462) — `fix(deviceQuery): fix invalid Python print formatting syntax in post-build script`**  
+  *Fixed invalid string formatting syntax in Python utility script under `1_Utilities/deviceQuery/`.*
+
+### 🔹 [Arduino Foundation (`arduino/ArduinoCore-API`)](https://github.com/arduino/ArduinoCore-API) — *1.2k+ ⭐*
+* **[PR #282](https://github.com/arduino/ArduinoCore-API/pull/282) — `fix(IPAddress): remove redundant condition in fromString6`**  
+  *Optimized C++ IPv6 parsing logic by removing tautological bounds checks in core IP address manipulation routines.*
+
+### 🔹 [OpenCV Foundation (`opencv/opencv`)](https://github.com/opencv/opencv) — *78.5k+ ⭐*
+* **[PR #29978](https://github.com/opencv/opencv/pull/29978) — `doc(js_tutorials): fix broken precompiled opencv.js download URLs`**  
+  *Resolved precompiled WebAssembly distribution endpoints across official OpenCV 4.x/5.x documentation pipelines.*
 
 ---
 
-## 🚀 Upstream Open-Source Contributions
+## 💻 Featured Projects
 
 <table>
-  <thead>
-    <tr>
-      <th width="35%">Repository</th>
-      <th width="45%">Pull Request & Technical Solution</th>
-      <th width="20%">Status</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        <b><a href="https://github.com/NVIDIA/cuda-samples">NVIDIA/cuda-samples</a></b><br/>
-        <sub>⭐ 18.2k+ • Official NVIDIA CUDA Samples</sub>
-      </td>
-      <td>
-        <b><a href="https://github.com/NVIDIA/cuda-samples/pull/462">PR #462</a>: <code>fix(test-runner): fix executable discovery and path resolution on Windows</code></b><br/>
-        <sub>Resolved Win32 <code>CreateProcess</code> path execution failures (<code>WinError 2</code>) across sample test runners and fixed binary discovery on Windows (Fixes #453).</sub>
-      </td>
-      <td>
-        <img src="https://img.shields.io/badge/PR-In_Review-yellow?style=flat-square&logo=github"/>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <b><a href="https://github.com/espressif/arduino-esp32">espressif/arduino-esp32</a></b><br/>
-        <sub>⭐ 14.5k+ • Official ESP32 Core</sub>
-      </td>
-      <td>
-        <b><a href="https://github.com/espressif/arduino-esp32/pull/12911">PR #12911</a>: <code>feat(timer): add std::function and lambda callback support</code></b><br/>
-        <sub>Engineered modern C++ lambda capture callbacks for <code>timerAttachInterrupt()</code>. Eliminated critical ISR use-after-free race conditions and prevented uninitialized heap memory leaks across ESP32-S3, C6, and P4.</sub>
-      </td>
-      <td>
-        <img src="https://img.shields.io/badge/PR-Passing_CI-success?style=flat-square&logo=githubactions&logoColor=white"/><br/>
-        <img src="https://img.shields.io/badge/Wokwi-Verified-blue?style=flat-square"/>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <b><a href="https://github.com/espressif/arduino-esp32">espressif/arduino-esp32</a></b><br/>
-        <sub>⭐ 14.5k+ • Official ESP32 Core</sub>
-      </td>
-      <td>
-        <b><a href="https://github.com/espressif/arduino-esp32/pull/12928">PR #12928</a>: <code>fix(periman): correct ETHERNET_MCD typo to ETHERNET_MDC</code></b><br/>
-        <sub>Aligned Peripheral Manager (<code>periman</code>) with IEEE 802.3 Ethernet Management Data Clock specification with zero-regression backward-compatible aliasing (Closes #12876).</sub>
-      </td>
-      <td>
-        <img src="https://img.shields.io/badge/PR-In_Review-yellow?style=flat-square&logo=github"/>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <b><a href="https://github.com/espressif/arduino-esp32">espressif/arduino-esp32</a></b><br/>
-        <sub>⭐ 14.5k+ • Official ESP32 Core</sub>
-      </td>
-      <td>
-        <b><a href="https://github.com/espressif/arduino-esp32/pull/12929">PR #12929</a>: <code>fix(partitions): correct littlefs partition subtype in large_littlefs_32MB.csv</code></b><br/>
-        <sub>Corrected partition table definitions, enabling out-of-the-box LittleFS VFS mounting for commercial 32MB flash modules (Closes #12898).</sub>
-      </td>
-      <td>
-        <img src="https://img.shields.io/badge/PR-In_Review-yellow?style=flat-square&logo=github"/>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <b><a href="https://github.com/arduino/ArduinoCore-API">arduino/ArduinoCore-API</a></b><br/>
-        <sub>⭐ 1.2k+ • Official Arduino Core API</sub>
-      </td>
-      <td>
-        <b><a href="https://github.com/arduino/ArduinoCore-API/pull/282">PR #282</a>: <code>fix(IPAddress): remove redundant condition in fromString6</code></b><br/>
-        <sub>Eliminated tautological pointer conditions in IPv6 parser state machine and extended Catch2 unit test coverage for consecutive colon validations (Fixes #249).</sub>
-      </td>
-      <td>
-        <img src="https://img.shields.io/badge/PR-In_Review-yellow?style=flat-square&logo=github"/>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <b><a href="https://github.com/opencv/opencv">opencv/opencv</a></b><br/>
-        <sub>⭐ 78.5k+ • Computer Vision Library</sub>
-      </td>
-      <td>
-        <b><a href="https://github.com/opencv/opencv/pull/29978">PR #29978</a>: <code>doc(js_tutorials): fix broken precompiled opencv.js download URLs</code></b><br/>
-        <sub>Resolved precompiled WebAssembly distribution endpoints across official OpenCV 4.x and 5.x documentation pipelines (Fixes #29818).</sub>
-      </td>
-      <td>
-        <img src="https://img.shields.io/badge/PR-In_Review-yellow?style=flat-square&logo=github"/>
-      </td>
-    </tr>
-  </tbody>
+  <tr>
+    <td width="60%">
+      <h3>🏁 TARS-MazeNav — Autonomous Micromouse Engine</h3>
+      <p>High-performance autonomous maze exploration and kinematics engine written in <b>C++ and Python</b> with real-time 60 FPS simulation studio.</p>
+      <ul>
+        <li><b>Modified Flood-Fill:</b> Dynamic Manhattan potential field recalculation with directional momentum bias.</li>
+        <li><b>45° Diagonal Kinematics:</b> Smooth trajectory compression with trapezoidal acceleration profiling (<i>v<sub>max</sub> = 3.5 m/s, a = 12 m/s²</i>).</li>
+        <li><b>Embedded Firmware:</b> Zero dynamic heap allocation operating under strict <b>&lt; 2 KB static RAM</b> on ESP32/STM32.</li>
+      </ul>
+      <p>
+        <a href="https://pruthvi828.github.io/tars-maze-navigation/"><b>👉 Launch Live 60 FPS Interactive Studio</b></a> &bull;
+        <a href="https://github.com/pruthvi828/tars-maze-navigation"><b>View Source Code</b></a>
+      </p>
+    </td>
+    <td width="40%" align="center">
+      <img src="https://img.shields.io/badge/60%20FPS-Canvas%20Simulation-38bdf8?style=for-the-badge&logo=googlechrome&logoColor=white" /><br/><br/>
+      <img src="https://img.shields.io/badge/Target-ESP32%20%7C%20STM32-red?style=for-the-badge" /><br/><br/>
+      <img src="https://img.shields.io/badge/Memory-%3C2KB%20Static%20RAM-34d399?style=for-the-badge" />
+    </td>
+  </tr>
 </table>
 
 ---
@@ -146,20 +89,13 @@ I build deterministic, memory-efficient systems at the boundary between hardware
 
 <div align="center">
 
-<!-- Skill Icons Badges -->
-<a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=c,cpp,python,linux,arduino,cmake,git,githubactions,vscode,opencv&theme=dark" alt="Tech Stack Icons" />
-</a>
-
-<br><br>
-
-| Domain | Technologies, Frameworks & Protocols |
+| Domain | Technologies & Frameworks |
 |---|---|
-| **Core Languages** | `C (C99/C11)` &bull; `Modern C++ (C++17/20)` &bull; `Python 3.10+` &bull; `ARM Assembly` |
-| **Embedded & RTOS** | `FreeRTOS` &bull; `ESP-IDF` &bull; `Arduino Core` &bull; `STM32 HAL / LL Drivers` &bull; `CMSIS` |
-| **Hardware & Peripherals** | `ESP32-S3 / C6 / P4` &bull; `STM32 Cortex-M` &bull; `CAN / TWAI` &bull; `RMII Ethernet` &bull; `SPI` &bull; `I2C` &bull; `UART` &bull; `DMA` &bull; `KiCad PCB` |
-| **Robotics & Algorithms** | `Modified Flood-Fill` &bull; `A* Search` &bull; `45° Diagonal Smoothing` &bull; `OpenCV Vision` &bull; `Sensor Fusion (ToF/IMU)` |
-| **Toolchains & DevOps** | `CMake` &bull; `GDB / JTAG Debugging` &bull; `Git` &bull; `GitHub Actions CI/CD` &bull; `Wokwi Simulation` &bull; `VS Code` |
+| **Languages** | ![C](https://img.shields.io/badge/C-00599C?style=flat&logo=c&logoColor=white) ![C++](https://img.shields.io/badge/C++17/20-00599C?style=flat&logo=c%2B%2B&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white) ![ARM Assembly](https://img.shields.io/badge/ARM_Assembly-0091BD?style=flat&logo=arm&logoColor=white) |
+| **Embedded & RTOS** | ![FreeRTOS](https://img.shields.io/badge/FreeRTOS-34d399?style=flat) ![ESP-IDF](https://img.shields.io/badge/ESP--IDF-E7352C?style=flat&logo=espressif&logoColor=white) ![Arduino Core](https://img.shields.io/badge/Arduino_Core-00979D?style=flat&logo=arduino&logoColor=white) ![STM32 HAL](https://img.shields.io/badge/STM32_HAL-03234B?style=flat&logo=stmicroelectronics&logoColor=white) |
+| **Hardware & Peripherals** | `ESP32-S3/C6/P4` &bull; `STM32 Cortex-M` &bull; `I2C` &bull; `SPI` &bull; `UART` &bull; `RMII Ethernet` &bull; `CAN/TWAI` &bull; `DMA` |
+| **Robotics & Vision** | `Modified Flood-Fill` &bull; `A* Search` &bull; `45° Diagonal Smoothing` &bull; `OpenCV` &bull; `ToF/IR Sensor Fusion` |
+| **Developer Tools** | ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white) ![CMake](https://img.shields.io/badge/CMake-064F8C?style=flat&logo=cmake&logoColor=white) ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat&logo=visualstudiocode&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white) |
 
 </div>
 
@@ -167,35 +103,13 @@ I build deterministic, memory-efficient systems at the boundary between hardware
 
 <div align="center">
 
-## 🐍 Contribution Activity Stream
+### 📊 GitHub Activity
 
-<img src="./github-snake.svg" width="100%" alt="GitHub Snake Animation"/>
-
-<br><br>
-
-## 📊 Telemetry & Activity Matrix
-
-<table border="0">
-  <tr>
-    <td width="50%">
-      <img src="https://github-readme-stats.vercel.app/api?username=pruthvi828&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&bg_color=0D1117&title_color=22D3EE&text_color=E2E8F0&icon_color=38BDF8" width="100%" alt="GitHub Stats" />
-    </td>
-    <td width="50%">
-      <img src="https://github-readme-streak-stats.herokuapp.com/?user=pruthvi828&theme=tokyonight&hide_border=true&background=0D1117&ring=22D3EE&fire=38BDF8&currStreakLabel=22D3EE" width="100%" alt="GitHub Streak" />
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2">
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=pruthvi828&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=22D3EE&text_color=E2E8F0" width="100%" alt="Top Languages" />
-    </td>
-  </tr>
-</table>
+<img src="https://github-readme-stats.vercel.app/api?username=spidyy19&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" width="48%" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=spidyy19&layout=compact&theme=tokyonight&hide_border=true" width="48%" />
 
 <br/>
 
-<!-- Footer Wave Banner -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,14,24,36&height=120&section=footer" width="100%"/>
-
-*Engineered with precision by **Pruthvi Jadhav** &bull; Always open to discussing low-level systems, firmware, and robotics engineering.*
+*Designed & engineered by **Pruthvi Jadhav** &bull; Always open to discussing low-level systems, firmware, and robotics opportunities.*
 
 </div>
