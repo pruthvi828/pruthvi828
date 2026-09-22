@@ -5,7 +5,7 @@
 
 [![GitHub followers](https://img.shields.io/github/followers/spidyy19?label=Follow&style=social)](https://github.com/spidyy19)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com)
-[![Email](https://img.shields.io/badge/Email-jadhavpruthvi828%40gmail.com-D14836?style=flat&logo=gmail&logoColor=white)](mailto:jadhavpruthvi828@gmail.com)
+[![Email](https://img.shields.io/badge/Email-jadhavpruthvi826%40gmail.com-D14836?style=flat&logo=gmail&logoColor=white)](mailto:jadhavpruthvi828@gmail.com)
 
 ```cpp
 #include <iostream>
