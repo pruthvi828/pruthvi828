@@ -8,7 +8,7 @@
 
 <br/><br/>
 
-[![GitHub followers](https://img.shields.io/github/followers/spidyy19?label=Followers&style=for-the-badge&color=0284c7&logo=github)](https://github.com/spidyy19)
+[![GitHub followers](https://img.shields.io/github/followers/pruthvi828?label=Followers&style=for-the-badge&color=0284c7&logo=github)](https://github.com/pruthvi828)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com)
 [![Email](https://img.shields.io/badge/Email-jadhavpruthvi828%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jadhavpruthvi828@gmail.com)
 [![Location](https://img.shields.io/badge/Location-India-FF9933?style=for-the-badge&logo=googlemaps&logoColor=white)](#)
@@ -30,7 +30,7 @@ struct SystemsEngineer {
 
 ### 🏆 GitHub Trophies
 
-<img src="https://github-profile-trophy.vercel.app/?username=spidyy19&theme=tokyonight&no-frame=true&no-bg=true&column=6" width="100%" />
+<img src="https://github-profile-trophy.vercel.app/?username=pruthvi828&theme=tokyonight&no-frame=true&no-bg=true&column=6" width="100%" />
 
 </div>
 
@@ -145,18 +145,14 @@ I am a systems-focused engineer specializing in **low-level C++, real-time embed
 
 <div align="center">
 
-### 📊 GitHub Metrics & Analytics Infographic (`lowlighter/metrics`)
+### 📊 GitHub Activity & Analytics
 
 <p align="center">
-  <img src="https://metrics.lecoq.io/spidyy19?template=classic&base=header%2C+activity%2C+community%2C+repositories%2C+metadata&config_timezone=Asia%2FKolkata" width="100%" alt="GitHub Metrics Infographic" />
+  <img src="https://github-readme-stats.vercel.app/api?username=pruthvi828&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" width="49%" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=pruthvi828&theme=tokyonight&hide_border=true" width="49%" />
 </p>
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=spidyy19&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" width="49%" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=spidyy19&theme=tokyonight&hide_border=true" width="49%" />
-</p>
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=spidyy19&layout=compact&theme=tokyonight&hide_border=true" width="50%" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=pruthvi828&layout=compact&theme=tokyonight&hide_border=true" width="50%" />
 
 <br/><br/>
 
