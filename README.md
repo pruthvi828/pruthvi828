@@ -14,7 +14,6 @@
 <a href="https://www.linkedin.com/in/pruthvi-jadhav-28767a309/"><img src="https://img.shields.io/badge/LinkedIn-0A101F?style=for-the-badge&logo=linkedin&logoColor=22D3EE" alt="LinkedIn"/></a>&nbsp;
 <a href="mailto:jadhavpruthvi828@gmail.com"><img src="https://img.shields.io/badge/Email-0A101F?style=for-the-badge&logo=gmail&logoColor=22D3EE" alt="Email"/></a>&nbsp;
 <a href="https://github.com/pruthvi828"><img src="https://img.shields.io/badge/GitHub-0A101F?style=for-the-badge&logo=github&logoColor=22D3EE" alt="GitHub"/></a>&nbsp;
-<a href="https://pruthvi828.github.io/tars-maze-navigation/"><img src="https://img.shields.io/badge/Live_Studio-60_FPS_Demo-10B981?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live Demo"/></a>&nbsp;
 <img src="https://img.shields.io/badge/System_Status-100%25_Operational-06B6D4?style=for-the-badge&logo=statuspage&logoColor=white" alt="Status"/>
 
 <br><br>
@@ -43,7 +42,7 @@
 I build deterministic, memory-efficient systems at the boundary between hardware and software. My work focuses on **low-level C++, hardware abstraction layers (HAL), real-time multitasking (FreeRTOS), and autonomous pathfinding algorithms**.
 
 - 🔬 **Firmware & Low-Level Architecture:** Interrupt Service Routines (ISRs), race-free concurrency, lockless ring buffers, DMA pipelines, and peripheral driver design (I2C, SPI, UART, RMII Ethernet).
-- 🏎️ **Robotics & Kinematics:** Creator of **[TARS-MazeNav](https://github.com/pruthvi828/tars-maze-navigation)** — an autonomous navigation engine with 45° diagonal smoothing, trapezoidal acceleration profiling, zero dynamic heap allocations, and `< 2KB` static RAM footprint.
+- 🏎️ **Autonomous Robotics & Kinematics:** Real-time motion planning, trajectory smoothing, dynamic flood-fill, and sensor fusion algorithms designed for microcontrollers with strict deterministic execution constraints.
 - 🌐 **Upstream Open Source:** Active contributor to **[Espressif Systems](https://github.com/espressif/arduino-esp32)** (ESP32 core HAL) and the **[OpenCV Foundation](https://github.com/opencv/opencv)**.
 
 ---
@@ -113,33 +112,6 @@ I build deterministic, memory-efficient systems at the boundary between hardware
       </td>
     </tr>
   </tbody>
-</table>
-
----
-
-## 🏁 Featured Engineering Projects
-
-<table>
-  <tr>
-    <td width="60%">
-      <h3>🏁 TARS-MazeNav — Autonomous Micromouse Engine</h3>
-      <p>High-performance autonomous maze exploration and kinematics engine written in <b>C++ and Python</b> with real-time 60 FPS simulation studio.</p>
-      <ul>
-        <li><b>Modified Flood-Fill:</b> Dynamic Manhattan potential field recalculation with directional momentum bias.</li>
-        <li><b>45° Diagonal Kinematics:</b> Smooth trajectory compression with trapezoidal acceleration profiling (<i>v<sub>max</sub> = 3.5 m/s, a = 12 m/s²</i>).</li>
-        <li><b>Embedded Firmware:</b> Zero dynamic heap allocation operating under strict <b>&lt; 2 KB static RAM</b> on ESP32/STM32.</li>
-      </ul>
-      <p>
-        <a href="https://pruthvi828.github.io/tars-maze-navigation/"><b>👉 Launch Live 60 FPS Interactive Studio</b></a> &bull;
-        <a href="https://github.com/pruthvi828/tars-maze-navigation"><b>View Source Code</b></a>
-      </p>
-    </td>
-    <td width="40%" align="center">
-      <img src="https://img.shields.io/badge/60%20FPS-Canvas%20Simulation-38bdf8?style=for-the-badge&logo=googlechrome&logoColor=white" /><br/><br/>
-      <img src="https://img.shields.io/badge/Target-ESP32%20%7C%20STM32-red?style=for-the-badge" /><br/><br/>
-      <img src="https://img.shields.io/badge/Memory-%3C2KB%20Static%20RAM-34d399?style=for-the-badge" />
-    </td>
-  </tr>
 </table>
 
 ---
