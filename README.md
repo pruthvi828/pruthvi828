@@ -39,8 +39,6 @@ I am a systems-focused engineering student specializing in **low-level C++, real
   *Fixed uninitialized stack memory defect in Zigbee C++ HAL across 12 endpoint classes (`ZigbeeAnalog`, `ZigbeeTempSensor`, etc.), explicitly assigning standard `manuf_code` to eliminate non-deterministic payload behavior.*
 * **[PR #12911](https://github.com/espressif/arduino-esp32/pull/12911) — `feat(timer): add std::function and lambda callback support`**  
   *Engineered modern C++ lambda callback support for `timerAttachInterrupt()`. Resolved critical ISR use-after-free race conditions and eliminated uninitialized heap memory leaks across ESP32-S3, C6, and P4.*
-* **[PR #12928](https://github.com/espressif/arduino-esp32/pull/12928) — `fix(periman): correct ETHERNET_MCD typo to ETHERNET_MDC`**  
-  *Aligned Peripheral Manager (`periman`) with IEEE 802.3 Ethernet Management Data Clock specification while providing zero-regression backward compatibility.*
 * **[PR #12929](https://github.com/espressif/arduino-esp32/pull/12929) — `fix(partitions): correct littlefs partition subtype in large_littlefs_32MB.csv`**  
   *Fixed filesystem partition table definitions, enabling seamless out-of-the-box LittleFS VFS mounting for 32MB flash modules.*
 
