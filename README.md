@@ -8,7 +8,6 @@
 
 <br/><br/>
 
-[![GitHub followers](https://img.shields.io/github/followers/pruthvi828?label=Followers&style=for-the-badge&color=0284c7&logo=github)](https://github.com/pruthvi828)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com)
 [![Email](https://img.shields.io/badge/Email-jadhavpruthvi828%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jadhavpruthvi828@gmail.com)
 [![Location](https://img.shields.io/badge/Location-India-FF9933?style=for-the-badge&logo=googlemaps&logoColor=white)](#)
@@ -25,12 +24,6 @@ struct SystemsEngineer {
     const char* open_source   = "Espressif Systems (arduino-esp32), NVIDIA, Arduino, OpenCV";
 };
 ```
-
----
-
-### 🏆 GitHub Trophies
-
-<img src="https://github-profile-trophy.vercel.app/?username=pruthvi828&theme=tokyonight&no-frame=true&no-bg=true&column=6" width="100%" />
 
 </div>
 
@@ -59,37 +52,37 @@ I am a systems-focused engineer specializing in **low-level C++, real-time embed
   </thead>
   <tbody>
     <tr>
-      <td><b>Espressif Systems</b><br/><code>espressif/arduino-esp32</code><br/><i>14.5k+ ⭐</i></td>
+      <td><b>Espressif Systems</b><br/><code>espressif/arduino-esp32</code></td>
       <td><a href="https://github.com/espressif/arduino-esp32/pull/12931"><b>PR #12931</b></a><br/><code>fix(zigbee): zero-init report_attr_cmd</code></td>
       <td><img src="https://img.shields.io/badge/Status-Review-yellow?style=flat-square" /></td>
       <td>Fixed uninitialized stack memory defect across 12 C++ Zigbee endpoint classes (<code>ZigbeeAnalog</code>, <code>ZigbeeTempSensor</code>), enforcing standard manufacturer code assignment.</td>
     </tr>
     <tr>
-      <td><b>Espressif Systems</b><br/><code>espressif/arduino-esp32</code><br/><i>14.5k+ ⭐</i></td>
+      <td><b>Espressif Systems</b><br/><code>espressif/arduino-esp32</code></td>
       <td><a href="https://github.com/espressif/arduino-esp32/pull/12911"><b>PR #12911</b></a><br/><code>feat(timer): std::function callbacks</code></td>
       <td><img src="https://img.shields.io/badge/Status-Review-yellow?style=flat-square" /></td>
       <td>Engineered modern C++ lambda callback support for <code>timerAttachInterrupt()</code>, resolving ISR use-after-free race conditions across ESP32-S3/C6/P4.</td>
     </tr>
     <tr>
-      <td><b>Espressif Systems</b><br/><code>espressif/arduino-esp32</code><br/><i>14.5k+ ⭐</i></td>
+      <td><b>Espressif Systems</b><br/><code>espressif/arduino-esp32</code></td>
       <td><a href="https://github.com/espressif/arduino-esp32/pull/12929"><b>PR #12929</b></a><br/><code>fix(partitions): LittleFS subtype</code></td>
       <td><img src="https://img.shields.io/badge/Status-Review-yellow?style=flat-square" /></td>
       <td>Corrected partition table definitions in <code>large_littlefs_32MB.csv</code>, enabling out-of-the-box LittleFS VFS mounting for 32MB flash modules.</td>
     </tr>
     <tr>
-      <td><b>NVIDIA</b><br/><code>NVIDIA/cuda-samples</code><br/><i>6.4k+ ⭐</i></td>
+      <td><b>NVIDIA</b><br/><code>NVIDIA/cuda-samples</code></td>
       <td><a href="https://github.com/NVIDIA/cuda-samples/pull/462"><b>PR #462</b></a><br/><code>fix(deviceQuery): python formatting</code></td>
       <td><img src="https://img.shields.io/badge/Status-Review-yellow?style=flat-square" /></td>
       <td>Fixed invalid string formatting syntax error in Python post-build utility under <code>1_Utilities/deviceQuery/</code>.</td>
     </tr>
     <tr>
-      <td><b>Arduino Foundation</b><br/><code>arduino/ArduinoCore-API</code><br/><i>1.2k+ ⭐</i></td>
+      <td><b>Arduino Foundation</b><br/><code>arduino/ArduinoCore-API</code></td>
       <td><a href="https://github.com/arduino/ArduinoCore-API/pull/282"><b>PR #282</b></a><br/><code>fix(IPAddress): IPv6 tautology</code></td>
       <td><img src="https://img.shields.io/badge/Status-Review-yellow?style=flat-square" /></td>
       <td>Optimized core C++ IPv6 parsing logic by removing tautological bounds checks in <code>fromString6()</code>.</td>
     </tr>
     <tr>
-      <td><b>OpenCV Foundation</b><br/><code>opencv/opencv</code><br/><i>78.5k+ ⭐</i></td>
+      <td><b>OpenCV Foundation</b><br/><code>opencv/opencv</code></td>
       <td><a href="https://github.com/opencv/opencv/pull/29978"><b>PR #29978</b></a><br/><code>doc(js): fix opencv.js URLs</code></td>
       <td><img src="https://img.shields.io/badge/Status-Review-yellow?style=flat-square" /></td>
       <td>Resolved precompiled WebAssembly distribution endpoints across official OpenCV 4.x/5.x documentation pipelines.</td>
@@ -116,17 +109,6 @@ I am a systems-focused engineer specializing in **low-level C++, real-time embed
 ---
 
 <div align="center">
-
-### 📊 GitHub Activity & Analytics
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=pruthvi828&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" width="49%" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=pruthvi828&theme=tokyonight&hide_border=true" width="49%" />
-</p>
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=pruthvi828&layout=compact&theme=tokyonight&hide_border=true" width="50%" />
-
-<br/><br/>
 
 *Architected & engineered by **Pruthvi Jadhav** &bull; Open to systems firmware, C++, and autonomous robotics engineering opportunities.*
 
