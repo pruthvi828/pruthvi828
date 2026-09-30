@@ -99,34 +99,6 @@ I am a systems-focused engineer specializing in **low-level C++, real-time embed
 
 ---
 
-## 💻 Featured Projects
-
-<table>
-  <tr>
-    <td width="65%">
-      <h3>🏁 TARS-MazeNav — Autonomous Micromouse Engine</h3>
-      <p>High-performance autonomous maze exploration and kinematics engine written in <b>C++ and Python</b> with real-time 60 FPS simulation studio.</p>
-      <ul>
-        <li><b>Modified Flood-Fill:</b> Dynamic Manhattan potential field recalculation with directional momentum bias.</li>
-        <li><b>45° Diagonal Kinematics:</b> Smooth trajectory compression with trapezoidal acceleration profiling (<i>v<sub>max</sub> = 3.5 m/s, a = 12 m/s²</i>).</li>
-        <li><b>Embedded Firmware:</b> Zero dynamic heap allocation operating under strict <b>&lt; 2 KB static RAM</b> on ESP32/STM32.</li>
-        <li><b>Web Audio SFX:</b> Integrated in-browser Web Audio synthesizer & particle explosion engine.</li>
-      </ul>
-      <p>
-        <a href="https://pruthvi828.github.io/tars-maze-navigation/"><b>👉 Launch Live 60 FPS Interactive Studio</b></a> &bull;
-        <a href="https://github.com/pruthvi828/tars-maze-navigation"><b>View Source Code</b></a>
-      </p>
-    </td>
-    <td width="35%" align="center">
-      <img src="https://img.shields.io/badge/60%20FPS-Canvas%20Studio-38bdf8?style=for-the-badge&logo=googlechrome&logoColor=white" /><br/><br/>
-      <img src="https://img.shields.io/badge/Target-ESP32%20%7C%20STM32-red?style=for-the-badge" /><br/><br/>
-      <img src="https://img.shields.io/badge/Memory-%3C2KB%20Static%20RAM-34d399?style=for-the-badge" />
-    </td>
-  </tr>
-</table>
-
----
-
 ## 🛠️ Technical Arsenal
 
 <div align="center">
