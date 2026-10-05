@@ -54,7 +54,7 @@ I am a systems-focused engineer specializing in **low-level C++, real-time embed
     <tr>
       <td><b>Espressif Systems</b><br/><code>espressif/arduino-esp32</code></td>
       <td><a href="https://github.com/espressif/arduino-esp32/pull/12931"><b>PR #12931</b></a><br/><code>fix(zigbee): zero-init report_attr_cmd</code></td>
-      <td><img src="https://img.shields.io/badge/Status-Review-yellow?style=flat-square" /></td>
+      <td><img src="https://img.shields.io/badge/Status-Merged-purple?style=flat-square" /></td>
       <td>Fixed uninitialized stack memory defect across 12 C++ Zigbee endpoint classes (<code>ZigbeeAnalog</code>, <code>ZigbeeTempSensor</code>), enforcing standard manufacturer code assignment.</td>
     </tr>
     <tr>
