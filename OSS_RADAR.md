@@ -1,12 +1,12 @@
 # 📡 Daily Open Source Radar
 
-> **Last Synchronized:** `2026-10-08 13:38 UTC` via automated GitHub Actions daily dispatch.
+> **Last Synchronized:** `2026-10-09 13:24 UTC` via automated GitHub Actions daily dispatch.
 > Curated unassigned high-impact open-source opportunities tailored for systems, embedded, and full-stack engineering.
 
 | Repository | Issue Title | Labels | Comments | Link |
 | :--- | :--- | :--- | :---: | :---: |
-| **Scottcjn/rustchain-bounties** | [ONBOARD: 3 RTC] Test the Miner and Post Your Hardware Report | `good first issue` `bounty` | 101 | [View Issue ↗](https://github.com/Scottcjn/rustchain-bounties/issues/2784) |
-| **Scottcjn/rustchain-bounties** | [MICRO-BOUNTY: 0.1 RTC] Why did you choose to work on an Elyan Labs repo? | `good first issue` `bounty` | 81 | [View Issue ↗](https://github.com/Scottcjn/rustchain-bounties/issues/16863) |
+| **Scottcjn/rustchain-bounties** | [MICRO-BOUNTY: 0.1 RTC] Why did you choose to work on an Elyan Labs repo? | `good first issue` `bounty` | 82 | [View Issue ↗](https://github.com/Scottcjn/rustchain-bounties/issues/16863) |
+| **Scottcjn/rustchain-bounties** | [ONBOARD: 3 RTC] Test the Miner and Post Your Hardware Report | `good first issue` `bounty` | 102 | [View Issue ↗](https://github.com/Scottcjn/rustchain-bounties/issues/2784) |
 | **Scottcjn/rustchain-bounties** | Write a Review of RustChain — 3 RTC (Good First Issue) | `good first issue` `bounty` | 117 | [View Issue ↗](https://github.com/Scottcjn/rustchain-bounties/issues/443) |
 | **Scottcjn/Rustchain** | [BOUNTY] Share Why You Starred RustChain — 3 RTC + Community Shoutout (Pool: 300 RTC) | `help wanted` `good first issue` | 187 | [View Issue ↗](https://github.com/Scottcjn/Rustchain/issues/165) |
 | **Exodus-Privacy/exodus** | Handle app with version name with > 50 characters | `bug` `enhancement` | 9 | [View Issue ↗](https://github.com/Exodus-Privacy/exodus/issues/300) |
