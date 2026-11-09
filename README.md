@@ -52,6 +52,12 @@ I am a systems-focused engineer specializing in **low-level C++, real-time embed
   </thead>
   <tbody>
     <tr>
+      <td><b>The Algorithms</b><br/><code>TheAlgorithms/C-Plus-Plus</code></td>
+      <td><a href="https://github.com/TheAlgorithms/C-Plus-Plus/pull/3268"><b>PR #3268</b></a><br/><code>feat(cpu_scheduling): Round Robin scheduling</code></td>
+      <td><img src="https://img.shields.io/badge/Status-Review-yellow?style=flat-square" /></td>
+      <td>Engineered modern C++17 preemptive Round Robin CPU scheduling engine with cyclic time-quantum preemption, Gantt timeline tracking, and mathematical invariant self-testing.</td>
+    </tr>
+    <tr>
       <td><b>Espressif Systems</b><br/><code>espressif/arduino-esp32</code></td>
       <td><a href="https://github.com/espressif/arduino-esp32/pull/13092"><b>PR #13092</b></a><br/><code>fix(network): lock TCPIP core in hostByName</code></td>
       <td><img src="https://img.shields.io/badge/Status-Review-yellow?style=flat-square" /></td>
