@@ -1,18 +1,22 @@
 <div align="center">
 
-# Hi, I'm Pruthvi Jadhav 👋
+<img src="./dark.svg" width="100%" alt="Pruthvi Jadhav Hero Banner"/>
+
+<br/><br/>
 
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&duration=2800&pause=800&color=38BDF8&center=true&vCenter=true&width=700&lines=Embedded+Systems+%26+Firmware+Engineer;Low-Level+C%2B%2B+%E2%80%A2+FreeRTOS+%E2%80%A2+ARM+Cortex-M;Upstream+Contributor+to+curl%2C+FreeRTOS%2C+Espressif" alt="Typing Header" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&duration=2800&pause=800&color=38BDF8&center=true&vCenter=true&width=700&lines=Embedded+Systems+%26+Firmware+Engineer;Low-Level+C%2B%2B+%E2%80%A2+FreeRTOS+%E2%80%A2+ARM+Cortex-M;Upstream+Contributor+to+curl%2C+FreeRTOS%2C+Espressif%2C+NVIDIA" alt="Typing Header" />
 </a>
 
 <br/><br/>
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pruthvi-jadhav-28767a309/)
 [![Email](https://img.shields.io/badge/Email-jadhavpruthvi828%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jadhavpruthvi828@gmail.com)
-[![Location](https://img.shields.io/badge/Location-India-FF9933?style=for-the-badge&logo=googlemaps&logoColor=white)](#)
+[![GitHub](https://img.shields.io/badge/GitHub-pruthvi828-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/pruthvi828)
+[![Live Studio](https://img.shields.io/badge/Live_Studio-60_FPS_Demo-10B981?style=for-the-badge&logo=googlechrome&logoColor=white)](https://pruthvi828.github.io/tars-maze-navigation/)
+[![Location](https://img.shields.io/badge/Location-Maharashtra%2C_India-FF9933?style=for-the-badge&logo=googlemaps&logoColor=white)](#)
 
-<br/>
+<br/><br/>
 
 ```cpp
 #include <iostream>
@@ -20,8 +24,8 @@
 struct SystemsEngineer {
     const char* name          = "Pruthvi Jadhav";
     const char* domain        = "Embedded Firmware, Real-Time Systems & Autonomous Robotics";
-    const char* core_stack    = "C++17/20, FreeRTOS, ESP-IDF, STM32 HAL, CUDA";
-    const char* open_source   = "curl, FreeRTOS (AWS), Espressif (arduino-esp32), NVIDIA, Arduino, OpenCV";
+    const char* core_stack    = "C++17/20, FreeRTOS, ESP-IDF, STM32 HAL, CUDA, SocketCAN";
+    const char* open_source   = "cURL, FreeRTOS (AWS), Espressif (arduino-esp32), NVIDIA, Arduino, OpenCV";
 };
 ```
 
@@ -31,11 +35,40 @@ struct SystemsEngineer {
 
 ## 📌 About Me
 
-I am a systems-focused engineer specializing in **low-level C++, real-time embedded firmware, and deterministic robotics navigation**.
+I am a systems-focused engineer specializing in **low-level C++, real-time embedded firmware, KiCad PCB design, and deterministic robotics navigation**.
 
-* ⚡ **Upstream Open Source:** Active contributor to core networking, kernel, and HAL for **cURL** (`curl`), **FreeRTOS** (`FreeRTOS-Kernel`), **Espressif Systems** (`arduino-esp32`), **NVIDIA** (`cuda-samples`), **Arduino** (`ArduinoCore-API`), and **OpenCV**.
-* 🏎️ **Autonomous Robotics:** Creator of **[TARS-MazeNav](https://github.com/pruthvi828/tars-maze-navigation)** — an embedded micromouse navigation engine (<2KB static RAM) with 45° diagonal kinematics and 60 FPS Web Studio.
-* 🔭 **Core Specialties:** Interrupt Service Routines (ISRs), FreeRTOS concurrency & memory safety, peripheral drivers (I2C/SPI/UART/RMII/CAN), and potential field pathfinding algorithms.
+* ⚡ **Upstream Open Source:** Active contributor across premier infrastructure codebases &mdash; **cURL** (`curl/curl`), **FreeRTOS** (`FreeRTOS/FreeRTOS-Kernel`), **Espressif Systems** (`arduino-esp32`), **The Algorithms** (`TheAlgorithms/C-Plus-Plus`, `TheAlgorithms/Python`), **NVIDIA** (`cuda-samples`), **Arduino Foundation** (`ArduinoCore-API`), and **OpenCV Foundation** (`opencv/opencv`).
+* 🏎️ **Autonomous Robotics:** Creator of **[TARS-MazeNav](https://github.com/pruthvi828/tars-maze-navigation)** &mdash; an embedded micromouse navigation engine (<2KB static RAM) with 45° diagonal kinematics, dynamic potential field recalculation, and a 60 FPS interactive Web Studio.
+* 🔭 **Core Specialties:** Interrupt Service Routines (ISRs), FreeRTOS multi-core SMP concurrency, peripheral drivers (I2C/SPI/UART/RMII/CAN/TWAI), and continuous-curvature pathfinding algorithms.
+
+---
+
+## 🏁 Featured Project: Autonomous Robotics & Simulation Studio
+
+<table>
+  <tr>
+    <td width="65%">
+      <h3>🏎️ <a href="https://github.com/pruthvi828/tars-maze-navigation">TARS-MazeNav: Autonomous Micromouse & Kinematics Studio</a></h3>
+      <p>High-performance algorithmic navigation engine and interactive simulation studio designed for national robotics championships (<strong>IIT Bombay Techfest MeshMerize</strong> &amp; <strong>IIT Madras Shaastra</strong>).</p>
+      <ul>
+        <li><b>Dynamic Potential Fields:</b> Real-time Modified Flood-Fill potential heatmap recalculation with directional momentum bias to eliminate unnecessary turns and motor deceleration.</li>
+        <li><b>45° Diagonal Kinematics:</b> Converts orthogonal stair-step paths into continuous curvature diagonal bursts (<i>v<sub>max</sub> = 3.5 m/s, a = 12 m/s²</i>).</li>
+        <li><b>Embedded C++ Firmware:</b> Zero-heap allocation architecture operating within a strict <b>&lt;2 KB static RAM footprint</b> for ESP32-S3 and STM32 Nucleo.</li>
+        <li><b>Interactive Web Studio:</b> Real-time 60 FPS canvas simulation with Raycasting sensor physics, algorithm comparisons, and one-click C++ header export.</li>
+      </ul>
+      <p>
+        <a href="https://pruthvi828.github.io/tars-maze-navigation/"><b>👉 Launch Live 60 FPS Interactive Studio</b></a> &bull;
+        <a href="https://github.com/pruthvi828/tars-maze-navigation"><b>View Source Code on GitHub</b></a>
+      </p>
+    </td>
+    <td width="35%" align="center">
+      <a href="https://pruthvi828.github.io/tars-maze-navigation/"><img src="https://img.shields.io/badge/60%20FPS-Canvas%20Simulation-38bdf8?style=for-the-badge&logo=googlechrome&logoColor=white" /></a><br/><br/>
+      <img src="https://img.shields.io/badge/Target-ESP32%20%7C%20STM32-red?style=for-the-badge" /><br/><br/>
+      <img src="https://img.shields.io/badge/Memory-%3C2KB%20Static%20RAM-34d399?style=for-the-badge" /><br/><br/>
+      <img src="https://img.shields.io/badge/Kinematics-45%C2%B0%20Continuous%20Curvature-a78bfa?style=for-the-badge" />
+    </td>
+  </tr>
+</table>
 
 ---
 
@@ -52,67 +85,73 @@ I am a systems-focused engineer specializing in **low-level C++, real-time embed
   </thead>
   <tbody>
     <tr>
-      <td><b>cURL</b><br/><code>curl/curl</code></td>
+      <td><b>cURL</b><br/><code>curl/curl</code><br/><i>37.5k ★</i></td>
       <td><a href="https://github.com/curl/curl/pull/23850"><b>PR #23850</b></a><br/><code>fix(hsts): store CURLOPT_HSTS_CTRL flags</code></td>
       <td><img src="https://img.shields.io/badge/Status-Review-yellow?style=flat-square" /></td>
-      <td>Resolved defect where <code>CURLHSTS_READONLYFILE</code> was ignored by persisting option bitmasks to cache instances and handle duplicates, preventing read-only HSTS cache files from being overwritten on cleanup.</td>
+      <td>Resolved defect where <code>CURLHSTS_READONLYFILE</code> was ignored by persisting option bitmasks to cache instances and handle duplicates, preventing read-only HSTS cache files from being overwritten on cleanup. Extended <code>tests/unit/unit1660.c</code>.</td>
     </tr>
     <tr>
-      <td><b>FreeRTOS (AWS)</b><br/><code>FreeRTOS/FreeRTOS-Kernel</code></td>
-      <td><a href="https://github.com/FreeRTOS/FreeRTOS-Kernel/pull/1535"><b>PR #1535</b></a><br/><code>fix(tasks): idle task affinity default in SMP</code></td>
-      <td><img src="https://img.shields.io/badge/Status-Review-yellow?style=flat-square" /></td>
-      <td>Resolved multi-core scheduler hang and infinite yield loops by ensuring idle tasks explicitly default to <code>tskNO_AFFINITY</code> when <code>configIDLE_AFFINITY</code> is 0, preventing idle tasks from inheriting restricted task affinities.</td>
-    </tr>
-    <tr>
-      <td><b>The Algorithms</b><br/><code>TheAlgorithms/C-Plus-Plus</code></td>
+      <td><b>The Algorithms</b><br/><code>TheAlgorithms/C-Plus-Plus</code><br/><i>31.1k ★</i></td>
       <td><a href="https://github.com/TheAlgorithms/C-Plus-Plus/pull/3268"><b>PR #3268</b></a><br/><code>feat(cpu_scheduling): Round Robin scheduling</code></td>
       <td><img src="https://img.shields.io/badge/Status-Review-yellow?style=flat-square" /></td>
       <td>Engineered modern C++17 preemptive Round Robin CPU scheduling engine with cyclic time-quantum preemption, Gantt timeline tracking, and mathematical invariant self-testing.</td>
     </tr>
     <tr>
-      <td><b>Espressif Systems</b><br/><code>espressif/arduino-esp32</code></td>
+      <td><b>The Algorithms</b><br/><code>TheAlgorithms/Python</code><br/><i>190k ★</i></td>
+      <td><a href="https://github.com/TheAlgorithms/Python/pull/15361"><b>PR #15361</b></a><br/><code>sorts: make tree_sort accept any Comparable</code></td>
+      <td><img src="https://img.shields.io/badge/Status-Merged-purple?style=flat-square" /></td>
+      <td>Upgraded <code>tree_sort</code> and <code>Node</code> dataclass to sort arbitrary <code>Comparable</code> items using PEP 695 generic type parameters (<code>[T: Comparable]</code>).</td>
+    </tr>
+    <tr>
+      <td><b>FreeRTOS (AWS)</b><br/><code>FreeRTOS/FreeRTOS-Kernel</code><br/><i>18.6k ★</i></td>
+      <td><a href="https://github.com/FreeRTOS/FreeRTOS-Kernel/pull/1535"><b>PR #1535</b></a><br/><code>fix(tasks): idle task affinity default in SMP</code></td>
+      <td><img src="https://img.shields.io/badge/Status-Review-yellow?style=flat-square" /></td>
+      <td>Resolved multi-core scheduler hang and infinite yield loops by ensuring idle tasks explicitly default to <code>tskNO_AFFINITY</code> when <code>configIDLE_AFFINITY</code> is 0, preventing idle tasks from inheriting restricted task affinities.</td>
+    </tr>
+    <tr>
+      <td><b>Espressif Systems</b><br/><code>espressif/arduino-esp32</code><br/><i>14.5k ★</i></td>
       <td><a href="https://github.com/espressif/arduino-esp32/pull/13092"><b>PR #13092</b></a><br/><code>fix(network): lock TCPIP core in hostByName</code></td>
       <td><img src="https://img.shields.io/badge/Status-Review-yellow?style=flat-square" /></td>
       <td>Resolved critical lwIP concurrency kernel abort (assert in <code>udp_new_ip_type</code>) by enforcing TCPIP core locking around <code>dns_clear_cache()</code> during network reconnects.</td>
     </tr>
     <tr>
-      <td><b>Espressif Systems</b><br/><code>espressif/arduino-esp32</code></td>
+      <td><b>Espressif Systems</b><br/><code>espressif/arduino-esp32</code><br/><i>14.5k ★</i></td>
       <td><a href="https://github.com/espressif/arduino-esp32/pull/12931"><b>PR #12931</b></a><br/><code>fix(zigbee): zero-init report_attr_cmd</code></td>
       <td><img src="https://img.shields.io/badge/Status-Merged-purple?style=flat-square" /></td>
       <td>Fixed uninitialized stack memory defect across 12 C++ Zigbee endpoint classes (<code>ZigbeeAnalog</code>, <code>ZigbeeTempSensor</code>), enforcing standard manufacturer code assignment.</td>
     </tr>
     <tr>
-      <td><b>Espressif Systems</b><br/><code>espressif/arduino-esp32</code></td>
+      <td><b>Espressif Systems</b><br/><code>espressif/arduino-esp32</code><br/><i>14.5k ★</i></td>
       <td><a href="https://github.com/espressif/arduino-esp32/pull/12911"><b>PR #12911</b></a><br/><code>feat(timer): std::function callbacks</code></td>
       <td><img src="https://img.shields.io/badge/Status-Merged-purple?style=flat-square" /></td>
       <td>Engineered modern C++ lambda callback support for <code>timerAttachInterrupt()</code>, resolving ISR use-after-free race conditions across ESP32-S3/C6/P4.</td>
     </tr>
     <tr>
-      <td><b>Espressif Systems</b><br/><code>espressif/arduino-esp32</code></td>
-      <td><a href="https://github.com/espressif/arduino-esp32/pull/12929"><b>PR #12929</b></a><br/><code>fix(partitions): LittleFS subtype</code></td>
-      <td><img src="https://img.shields.io/badge/Status-Review-yellow?style=flat-square" /></td>
-      <td>Corrected partition table definitions in <code>large_littlefs_32MB.csv</code>, enabling out-of-the-box LittleFS VFS mounting for 32MB flash modules.</td>
+      <td><b>Espressif Systems</b><br/><code>espressif/arduino-esp32</code><br/><i>14.5k ★</i></td>
+      <td><a href="https://github.com/espressif/arduino-esp32/pull/12908"><b>PR #12908</b></a><br/><code>fix(periman): correct ETHERNET_MCD typo</code></td>
+      <td><img src="https://img.shields.io/badge/Status-Merged-purple?style=flat-square" /></td>
+      <td>Aligned Peripheral Manager (<code>periman</code>) and Ethernet HAL with IEEE 802.3 Ethernet Management Data Clock (MDC) standard, providing 100% backward-compatible enum aliasing.</td>
     </tr>
     <tr>
-      <td><b>NVIDIA</b><br/><code>NVIDIA/cuda-samples</code></td>
-      <td><a href="https://github.com/NVIDIA/cuda-samples/pull/462"><b>PR #462</b></a><br/><code>fix(deviceQuery): python formatting</code></td>
+      <td><b>NVIDIA</b><br/><code>NVIDIA/cuda-samples</code><br/><i>6.4k ★</i></td>
+      <td><a href="https://github.com/NVIDIA/cuda-samples/pull/462"><b>PR #462</b></a><br/><code>fix(test-runner): executable discovery on Win32</code></td>
       <td><img src="https://img.shields.io/badge/Status-Review-yellow?style=flat-square" /></td>
-      <td>Fixed invalid string formatting syntax error in Python post-build utility under <code>1_Utilities/deviceQuery/</code>.</td>
+      <td>Resolved <code>[WinError 2]</code> path execution failures in <code>run_tests.py</code> on Windows by implementing cross-platform path separators and <code>.exe</code> binary filtering.</td>
     </tr>
     <tr>
-      <td><b>Arduino Foundation</b><br/><code>arduino/ArduinoCore-API</code></td>
+      <td><b>Arduino Foundation</b><br/><code>arduino/ArduinoCore-API</code><br/><i>1.2k ★</i></td>
       <td><a href="https://github.com/arduino/ArduinoCore-API/pull/284"><b>PR #284</b></a><br/><code>feat(CanMsg): RTR frame support</code></td>
       <td><img src="https://img.shields.io/badge/Status-Review-yellow?style=flat-square" /></td>
-      <td>Implemented SocketCAN-compliant bit-30 Remote Transmission Request (RTR) arbitration handling and Catch2 test suite across the official Arduino CAN abstraction layer.</td>
+      <td>Implemented SocketCAN-compliant bit-30 Remote Transmission Request (RTR) arbitration handling, accessors (<code>isRtr()</code>, <code>isRemote()</code>), and Catch2 test suite across the official Arduino CAN abstraction layer.</td>
     </tr>
     <tr>
-      <td><b>Arduino Foundation</b><br/><code>arduino/ArduinoCore-API</code></td>
+      <td><b>Arduino Foundation</b><br/><code>arduino/ArduinoCore-API</code><br/><i>1.2k ★</i></td>
       <td><a href="https://github.com/arduino/ArduinoCore-API/pull/282"><b>PR #282</b></a><br/><code>fix(IPAddress): IPv6 tautology</code></td>
       <td><img src="https://img.shields.io/badge/Status-Review-yellow?style=flat-square" /></td>
       <td>Optimized core C++ IPv6 parsing logic by removing tautological bounds checks in <code>fromString6()</code>.</td>
     </tr>
     <tr>
-      <td><b>OpenCV Foundation</b><br/><code>opencv/opencv</code></td>
+      <td><b>OpenCV Foundation</b><br/><code>opencv/opencv</code><br/><i>79.5k ★</i></td>
       <td><a href="https://github.com/opencv/opencv/pull/29978"><b>PR #29978</b></a><br/><code>doc(js): fix opencv.js URLs</code></td>
       <td><img src="https://img.shields.io/badge/Status-Merged-purple?style=flat-square" /></td>
       <td>Resolved precompiled WebAssembly distribution endpoints across official OpenCV 4.x/5.x documentation pipelines.</td>
@@ -126,12 +165,13 @@ I am a systems-focused engineer specializing in **low-level C++, real-time embed
 
 <div align="center">
 
-| Category | Technologies & Tools |
+| Category | Technologies &amp; Tools |
 | :--- | :--- |
 | **Languages** | ![C](https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white) ![C++](https://img.shields.io/badge/C++17/20-00599C?style=flat-square&logo=c%2B%2B&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![ARM Assembly](https://img.shields.io/badge/ARM_Assembly-0091BD?style=flat-square&logo=arm&logoColor=white) |
-| **Embedded & RTOS** | ![FreeRTOS](https://img.shields.io/badge/FreeRTOS-34d399?style=flat-square) ![ESP-IDF](https://img.shields.io/badge/ESP--IDF-E7352C?style=flat-square&logo=espressif&logoColor=white) ![Arduino Core](https://img.shields.io/badge/Arduino_Core-00979D?style=flat-square&logo=arduino&logoColor=white) ![STM32 HAL](https://img.shields.io/badge/STM32_HAL-03234B?style=flat-square&logo=stmicroelectronics&logoColor=white) |
-| **Peripherals & Protocols** | `ESP32-S3/C6/P4` &bull; `STM32 Cortex-M` &bull; `I2C` &bull; `SPI` &bull; `UART` &bull; `RMII Ethernet` &bull; `CAN/TWAI` &bull; `Zigbee ZCL` &bull; `DMA` |
-| **Robotics & Vision** | `Modified Flood-Fill` &bull; `A* Search` &bull; `45° Diagonal Kinematics` &bull; `OpenCV` &bull; `Sensor Fusion` |
+| **Embedded &amp; RTOS** | ![FreeRTOS](https://img.shields.io/badge/FreeRTOS-34d399?style=flat-square) ![ESP-IDF](https://img.shields.io/badge/ESP--IDF-E7352C?style=flat-square&logo=espressif&logoColor=white) ![Arduino Core](https://img.shields.io/badge/Arduino_Core-00979D?style=flat-square&logo=arduino&logoColor=white) ![STM32 HAL](https://img.shields.io/badge/STM32_HAL-03234B?style=flat-square&logo=stmicroelectronics&logoColor=white) |
+| **Peripherals &amp; Protocols** | `ESP32-S3/C6/P4` &bull; `STM32 Cortex-M` &bull; `I2C` &bull; `SPI` &bull; `UART` &bull; `RMII Ethernet` &bull; `CAN/TWAI` &bull; `Zigbee ZCL` &bull; `DMA` |
+| **Robotics &amp; Vision** | `Modified Flood-Fill` &bull; `A* Search` &bull; `45° Diagonal Kinematics` &bull; `OpenCV` &bull; `Sensor Fusion (ToF / IR)` |
+| **Hardware &amp; EDA** | `KiCad PCB Design` &bull; `Schematic Capture` &bull; `High-Speed Routing` &bull; `Circuit Analysis` |
 | **Developer Tools** | ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) ![CMake](https://img.shields.io/badge/CMake-064F8C?style=flat-square&logo=cmake&logoColor=white) ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white) |
 
 </div>
@@ -140,6 +180,19 @@ I am a systems-focused engineer specializing in **low-level C++, real-time embed
 
 <div align="center">
 
-*Architected & engineered by **Pruthvi Jadhav** &bull; Open to systems firmware, C++, and autonomous robotics engineering opportunities.*
+### 🐍 Contribution Activity Stream
+
+<img src="./github-snake.svg" width="100%" alt="GitHub Snake Animation"/>
+
+<br/><br/>
+
+<p align="center">
+  <img src="./pcb-card.svg" width="49%" alt="PCB Card"/>
+  <img src="./contrib-heatmap.svg" width="49%" alt="Contribution Heatmap"/>
+</p>
+
+<br/>
+
+*Architected & engineered by **Pruthvi Jadhav** &bull; Open to systems firmware, low-level C++, and autonomous robotics engineering opportunities.*
 
 </div>
