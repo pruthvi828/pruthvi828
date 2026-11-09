@@ -13,7 +13,6 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pruthvi-jadhav-28767a309/)
 [![Email](https://img.shields.io/badge/Email-jadhavpruthvi828%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jadhavpruthvi828@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-pruthvi828-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/pruthvi828)
-[![Live Studio](https://img.shields.io/badge/Live_Studio-60_FPS_Demo-10B981?style=for-the-badge&logo=googlechrome&logoColor=white)](https://pruthvi828.github.io/tars-maze-navigation/)
 [![Location](https://img.shields.io/badge/Location-Maharashtra%2C_India-FF9933?style=for-the-badge&logo=googlemaps&logoColor=white)](#)
 
 <br/><br/>
@@ -38,37 +37,8 @@ struct SystemsEngineer {
 I am a systems-focused engineer specializing in **low-level C++, real-time embedded firmware, KiCad PCB design, and deterministic robotics navigation**.
 
 * ⚡ **Upstream Open Source:** Active contributor across premier infrastructure codebases &mdash; **cURL** (`curl/curl`), **FreeRTOS** (`FreeRTOS/FreeRTOS-Kernel`), **Espressif Systems** (`arduino-esp32`), **The Algorithms** (`TheAlgorithms/C-Plus-Plus`, `TheAlgorithms/Python`), **NVIDIA** (`cuda-samples`), **Arduino Foundation** (`ArduinoCore-API`), and **OpenCV Foundation** (`opencv/opencv`).
-* 🏎️ **Autonomous Robotics:** Creator of **[TARS-MazeNav](https://github.com/pruthvi828/tars-maze-navigation)** &mdash; an embedded micromouse navigation engine (<2KB static RAM) with 45° diagonal kinematics, dynamic potential field recalculation, and a 60 FPS interactive Web Studio.
-* 🔭 **Core Specialties:** Interrupt Service Routines (ISRs), FreeRTOS multi-core SMP concurrency, peripheral drivers (I2C/SPI/UART/RMII/CAN/TWAI), and continuous-curvature pathfinding algorithms.
-
----
-
-## 🏁 Featured Project: Autonomous Robotics & Simulation Studio
-
-<table>
-  <tr>
-    <td width="65%">
-      <h3>🏎️ <a href="https://github.com/pruthvi828/tars-maze-navigation">TARS-MazeNav: Autonomous Micromouse & Kinematics Studio</a></h3>
-      <p>High-performance algorithmic navigation engine and interactive simulation studio designed for national robotics championships (<strong>IIT Bombay Techfest MeshMerize</strong> &amp; <strong>IIT Madras Shaastra</strong>).</p>
-      <ul>
-        <li><b>Dynamic Potential Fields:</b> Real-time Modified Flood-Fill potential heatmap recalculation with directional momentum bias to eliminate unnecessary turns and motor deceleration.</li>
-        <li><b>45° Diagonal Kinematics:</b> Converts orthogonal stair-step paths into continuous curvature diagonal bursts (<i>v<sub>max</sub> = 3.5 m/s, a = 12 m/s²</i>).</li>
-        <li><b>Embedded C++ Firmware:</b> Zero-heap allocation architecture operating within a strict <b>&lt;2 KB static RAM footprint</b> for ESP32-S3 and STM32 Nucleo.</li>
-        <li><b>Interactive Web Studio:</b> Real-time 60 FPS canvas simulation with Raycasting sensor physics, algorithm comparisons, and one-click C++ header export.</li>
-      </ul>
-      <p>
-        <a href="https://pruthvi828.github.io/tars-maze-navigation/"><b>👉 Launch Live 60 FPS Interactive Studio</b></a> &bull;
-        <a href="https://github.com/pruthvi828/tars-maze-navigation"><b>View Source Code on GitHub</b></a>
-      </p>
-    </td>
-    <td width="35%" align="center">
-      <a href="https://pruthvi828.github.io/tars-maze-navigation/"><img src="https://img.shields.io/badge/60%20FPS-Canvas%20Simulation-38bdf8?style=for-the-badge&logo=googlechrome&logoColor=white" /></a><br/><br/>
-      <img src="https://img.shields.io/badge/Target-ESP32%20%7C%20STM32-red?style=for-the-badge" /><br/><br/>
-      <img src="https://img.shields.io/badge/Memory-%3C2KB%20Static%20RAM-34d399?style=for-the-badge" /><br/><br/>
-      <img src="https://img.shields.io/badge/Kinematics-45%C2%B0%20Continuous%20Curvature-a78bfa?style=for-the-badge" />
-    </td>
-  </tr>
-</table>
+* 🏎️ **Autonomous Robotics &amp; Control:** Real-time pathfinding algorithms, dynamic potential fields, continuous-curvature kinematics, and deterministic sensor fusion.
+* 🔭 **Core Specialties:** Interrupt Service Routines (ISRs), FreeRTOS multi-core SMP concurrency, peripheral drivers (I2C/SPI/UART/RMII/CAN/TWAI), and low-level memory safety.
 
 ---
 
