@@ -89,6 +89,12 @@ I am a systems-focused engineer specializing in **low-level C++, real-time embed
     </tr>
     <tr>
       <td><b>Arduino Foundation</b><br/><code>arduino/ArduinoCore-API</code></td>
+      <td><a href="https://github.com/arduino/ArduinoCore-API/pull/284"><b>PR #284</b></a><br/><code>feat(CanMsg): RTR frame support</code></td>
+      <td><img src="https://img.shields.io/badge/Status-Review-yellow?style=flat-square" /></td>
+      <td>Implemented SocketCAN-compliant bit-30 Remote Transmission Request (RTR) arbitration handling and Catch2 test suite across the official Arduino CAN abstraction layer.</td>
+    </tr>
+    <tr>
+      <td><b>Arduino Foundation</b><br/><code>arduino/ArduinoCore-API</code></td>
       <td><a href="https://github.com/arduino/ArduinoCore-API/pull/282"><b>PR #282</b></a><br/><code>fix(IPAddress): IPv6 tautology</code></td>
       <td><img src="https://img.shields.io/badge/Status-Review-yellow?style=flat-square" /></td>
       <td>Optimized core C++ IPv6 parsing logic by removing tautological bounds checks in <code>fromString6()</code>.</td>
