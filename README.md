@@ -53,6 +53,12 @@ I am a systems-focused engineer specializing in **low-level C++, real-time embed
   <tbody>
     <tr>
       <td><b>Espressif Systems</b><br/><code>espressif/arduino-esp32</code></td>
+      <td><a href="https://github.com/espressif/arduino-esp32/pull/13092"><b>PR #13092</b></a><br/><code>fix(network): lock TCPIP core in hostByName</code></td>
+      <td><img src="https://img.shields.io/badge/Status-Review-yellow?style=flat-square" /></td>
+      <td>Resolved critical lwIP concurrency kernel abort (assert in <code>udp_new_ip_type</code>) by enforcing TCPIP core locking around <code>dns_clear_cache()</code> during network reconnects.</td>
+    </tr>
+    <tr>
+      <td><b>Espressif Systems</b><br/><code>espressif/arduino-esp32</code></td>
       <td><a href="https://github.com/espressif/arduino-esp32/pull/12931"><b>PR #12931</b></a><br/><code>fix(zigbee): zero-init report_attr_cmd</code></td>
       <td><img src="https://img.shields.io/badge/Status-Merged-purple?style=flat-square" /></td>
       <td>Fixed uninitialized stack memory defect across 12 C++ Zigbee endpoint classes (<code>ZigbeeAnalog</code>, <code>ZigbeeTempSensor</code>), enforcing standard manufacturer code assignment.</td>
@@ -60,7 +66,7 @@ I am a systems-focused engineer specializing in **low-level C++, real-time embed
     <tr>
       <td><b>Espressif Systems</b><br/><code>espressif/arduino-esp32</code></td>
       <td><a href="https://github.com/espressif/arduino-esp32/pull/12911"><b>PR #12911</b></a><br/><code>feat(timer): std::function callbacks</code></td>
-      <td><img src="https://img.shields.io/badge/Status-Review-yellow?style=flat-square" /></td>
+      <td><img src="https://img.shields.io/badge/Status-Merged-purple?style=flat-square" /></td>
       <td>Engineered modern C++ lambda callback support for <code>timerAttachInterrupt()</code>, resolving ISR use-after-free race conditions across ESP32-S3/C6/P4.</td>
     </tr>
     <tr>
@@ -84,7 +90,7 @@ I am a systems-focused engineer specializing in **low-level C++, real-time embed
     <tr>
       <td><b>OpenCV Foundation</b><br/><code>opencv/opencv</code></td>
       <td><a href="https://github.com/opencv/opencv/pull/29978"><b>PR #29978</b></a><br/><code>doc(js): fix opencv.js URLs</code></td>
-      <td><img src="https://img.shields.io/badge/Status-Review-yellow?style=flat-square" /></td>
+      <td><img src="https://img.shields.io/badge/Status-Merged-purple?style=flat-square" /></td>
       <td>Resolved precompiled WebAssembly distribution endpoints across official OpenCV 4.x/5.x documentation pipelines.</td>
     </tr>
   </tbody>
