@@ -3,7 +3,7 @@
 # Hi, I'm Pruthvi Jadhav 👋
 
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&duration=2800&pause=800&color=38BDF8&center=true&vCenter=true&width=700&lines=Embedded+Systems+%26+Firmware+Engineer;Low-Level+C%2B%2B+%E2%80%A2+FreeRTOS+%E2%80%A2+ARM+Cortex-M;Upstream+Contributor+to+Espressif%2C+NVIDIA+%26+OpenCV" alt="Typing Header" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&duration=2800&pause=800&color=38BDF8&center=true&vCenter=true&width=700&lines=Embedded+Systems+%26+Firmware+Engineer;Low-Level+C%2B%2B+%E2%80%A2+FreeRTOS+%E2%80%A2+ARM+Cortex-M;Upstream+Contributor+to+FreeRTOS%2C+Espressif%2C+NVIDIA" alt="Typing Header" />
 </a>
 
 <br/><br/>
@@ -21,7 +21,7 @@ struct SystemsEngineer {
     const char* name          = "Pruthvi Jadhav";
     const char* domain        = "Embedded Firmware, Real-Time Systems & Autonomous Robotics";
     const char* core_stack    = "C++17/20, FreeRTOS, ESP-IDF, STM32 HAL, CUDA";
-    const char* open_source   = "Espressif Systems (arduino-esp32), NVIDIA, Arduino, OpenCV";
+    const char* open_source   = "FreeRTOS (AWS), Espressif (arduino-esp32), NVIDIA, Arduino, OpenCV";
 };
 ```
 
@@ -33,7 +33,7 @@ struct SystemsEngineer {
 
 I am a systems-focused engineer specializing in **low-level C++, real-time embedded firmware, and deterministic robotics navigation**.
 
-* ⚡ **Upstream Open Source:** Active contributor to core HAL and drivers for **Espressif Systems** (`arduino-esp32`), **NVIDIA** (`cuda-samples`), **Arduino** (`ArduinoCore-API`), and **OpenCV**.
+* ⚡ **Upstream Open Source:** Active contributor to core kernel, HAL, and drivers for **FreeRTOS** (`FreeRTOS-Kernel`), **Espressif Systems** (`arduino-esp32`), **NVIDIA** (`cuda-samples`), **Arduino** (`ArduinoCore-API`), and **OpenCV**.
 * 🏎️ **Autonomous Robotics:** Creator of **[TARS-MazeNav](https://github.com/pruthvi828/tars-maze-navigation)** — an embedded micromouse navigation engine (<2KB static RAM) with 45° diagonal kinematics and 60 FPS Web Studio.
 * 🔭 **Core Specialties:** Interrupt Service Routines (ISRs), FreeRTOS concurrency & memory safety, peripheral drivers (I2C/SPI/UART/RMII/CAN), and potential field pathfinding algorithms.
 
@@ -51,6 +51,12 @@ I am a systems-focused engineer specializing in **low-level C++, real-time embed
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td><b>FreeRTOS (AWS)</b><br/><code>FreeRTOS/FreeRTOS-Kernel</code></td>
+      <td><a href="https://github.com/FreeRTOS/FreeRTOS-Kernel/pull/1535"><b>PR #1535</b></a><br/><code>fix(tasks): idle task affinity default in SMP</code></td>
+      <td><img src="https://img.shields.io/badge/Status-Review-yellow?style=flat-square" /></td>
+      <td>Resolved multi-core scheduler hang and infinite yield loops by ensuring idle tasks explicitly default to <code>tskNO_AFFINITY</code> when <code>configIDLE_AFFINITY</code> is 0, preventing idle tasks from inheriting restricted task affinities.</td>
+    </tr>
     <tr>
       <td><b>The Algorithms</b><br/><code>TheAlgorithms/C-Plus-Plus</code></td>
       <td><a href="https://github.com/TheAlgorithms/C-Plus-Plus/pull/3268"><b>PR #3268</b></a><br/><code>feat(cpu_scheduling): Round Robin scheduling</code></td>
